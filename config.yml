@@ -1,0 +1,6 @@
+includePaths: []
+stylesheets:
+  - 'https://unpkg.com/bootstrap@4.0.0-alpha.6/dist/css/bootstrap.css'
+javascripts:
+  - 'https://unpkg.com/bootstrap@4.0.0-alpha.6/dist/js/bootstrap.js'
+  - 'https://unpkg.com/particles.js@2.0.0/particles.js'
