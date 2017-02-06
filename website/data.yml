@@ -1,24 +1,17 @@
-title: Your great website powered by Kulfon
-dummy: >
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-  tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-  vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-  no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-  Edit this text in 'data.yml'
+title: PolyConf - Programming Conference for full stack programmers
 
 meta:
-  description: Dummy meta description
+  description: PolyConf is a three-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development.
   facebook:
-    site_name: Made by Kulfon
+    site_name: PolyConf
     image:
-      url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
+      url: http://polyconf.com/assets/polyconf16.png
       width: 512
       height: 512
       type: img/jpg
   twitter:
-    site: Made by Kulfon
+    site: PolyConf
     creator: Kulfon
     image:
-      url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
-    domain: kulfon.net
+      url: http://polyconf.com/assets/polyconf16.png 
+    domain: polyconf.com
