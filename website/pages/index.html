@@ -1,14 +1,14 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 <main>
-  <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse">
+  <nav class="navbar navbar-toggleable-md navbar-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
       <img src="/images/logo.svg" alt="" class="img-fluid">
     </a>
-    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
@@ -29,16 +29,16 @@
           <a class="nav-link" href="#">Venue</a>
         </li>
       </ul>
-    </div> -->
+    </div>
   </nav>
 
   <div id="particles-js"></div>
   <div class="text">
-    <h3 class="mt-0">JUL 1 - JUL 2, 2017 · POLAND</h3>
-    <h1 class="mt-0">The <span class="color">Universe</span> of Virtual Machines</h1>
-    <p class="mt-0">Let's take a journey to explore the waste universe of virtual machines: <br/>
+    <h3 class="mt-0 animate">JUL 1 - JUL 2, 2017 · POLAND</h3>
+    <h1 class="mt-0 animate">The <span class="color">Universe</span> of Virtual Machines</h1>
+    <p class="mt-0 animate">Let's take a journey to explore the waste universe of virtual machines: <br/>
       to seek out new programming languages and to boldly go deep inside the bytecode</p>
-    <form action="//polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <form action="//polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate animate" target="_blank" novalidate="">
       <input type="email" value="" name="EMAIL" placeholder="Your e-mail address" class="required email" id="mce-EMAIL">
       <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
     </form>
@@ -78,4 +78,84 @@
     </li>
   </ul>
 </main>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble dark">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="mt-0 title">
+              Welcome to PolyConf
+            </h1>
+            <p class="lead mb-0">
+              PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies
+              for programmers interested in polyglot approach to software development.
+              Our goal is to foster exchange between programming languages.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4 class="mb-3 text-uppercase">history</h4>
+        <p class="mb-0">PolyConf succeeds RuPy, a Ruby and Python conference founded in 2006. Over 10 years the conference has grown and disseminated to several countries (Poland, Czech Republic, Hungary, Brazil) as well as to other programming languages.</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="mb-3 text-uppercase">mission</h4>
+        <p class="mb-0">PolyConf mission is to promote polyglot approach to software development and foster cross-pollination between various technologies and their communities.</p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 ticket-order">
+        <h4 class="mb-3 float-left">Sounds perfect? Grab your ticket now!</h4>
+        <a href="#" class="btn text-uppercase">Buy a ticket</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="speakers">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble light">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="mt-0 title">
+              Speakers
+            </h1>
+            <p class="lead mb-0">
+              PolyConf is not focused on any particular language or area of technology.
+              We encourage diverse topics oriented towards the future of Computer Science.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 speaker">
+        <img src="http://placehold.it/300x300" alt="" class="img-fluid">
+        <div class="bio">
+          <h6 class="name">John Doe</h6>
+          <p class="mb-0">Stack follows the BEM naming convention that focusses on logical code</p>
+        </div>
+      </div>
+      <div class="col-md-3 speaker">
+        <img src="http://placehold.it/300x300" alt="" class="img-fluid">
+        <div class="bio">
+          <h6 class="name">Todd Motto</h6>
+          <p class="mb-0">Stack follows the BEM naming convention that focusses on logical code</p>
+        </div>
+      </div>
+      <div class="col-md-3 speaker">
+        <img src="http://placehold.it/300x300" alt="" class="img-fluid">
+        <div class="bio">
+          <h6 class="name">Imię Nazwisko</h6>
+          <p class="mb-0">Stack follows the BEM naming convention that focusses on logical code</p>
+        </div>
+      </div>
+      <div class="col-md-3 speaker">
+        <img src="http://placehold.it/300x300" alt="" class="img-fluid">
+        <div class="bio">
+          <h6 class="name">Jan Kowalski</h6>
+          <p class="mb-0">Stack follows the BEM naming convention that focusses on logical code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
