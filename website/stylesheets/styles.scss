@@ -3,6 +3,7 @@ $white: #fff;
 $blue: #26b2e6;
 $navyBlue: #1c1f25;
 $blueBg: #244659;
+$green: #08AF59;
 
 * {
   box-sizing: border-box;
@@ -385,12 +386,164 @@ main {
     position: relative;
     margin-bottom: 30px;
 
+    .thumbnail {
+      position: relative;
+
+      .tags {
+        position: absolute;
+        left: 14px;
+        bottom: -5px;
+
+        li {
+          margin-right: 4px;
+          display: inline-block;
+
+          span {
+            padding: 4px 8px;
+            background: $green;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+          }
+        }
+      }
+    }
+
     .bio {
       padding: 20px 20px;
       background: $white;
 
       p {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+#sponsors {
+  position: relative;
+  padding: 130px 0 130px 0;
+
+  img {
+    max-width: 80%;
+  }
+}
+
+#footer {
+  position: relative;
+  background: $navyBlue;
+
+  .footer-top {
+    padding: 80px 0;
+
+    img {
+      margin-left: -15px;
+      max-height: 60px;
+    }
+
+    .title {
+      color: $white
+    }
+
+    p {
+      font-size: 13px;
+      color: #888;
+
+      &.lead {
+        padding-right: 20px;
+        font-size: 15px;
+        color: $white;
+      }
+    }
+
+    .mini-nav {
+      position: relative;
+      padding: 0;
+      margin: 10px 0 0 0;
+      vertical-align: top;
+
+      li {
+        margin-bottom: 5px;
+        display: block;
+
+        a {
+          color: #888;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 12px;
+        }
+      }
+    }
+
+    form {
+      margin: 5px 0 0 0;
+
+      input {
+        margin-right: 6px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid $white;
+        height: 50px;
+        color: $white;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 200px;
+        outline: none;
+
+      }
+
+      button {
+        padding: 13.5px 26px;
+        border: 2px solid $white;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        background: transparent;
+        vertical-align: bottom;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+
+        &:hover {
+          background: $white;
+          color: #000;
+          transition: .2s ease-in;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 33px 0;
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    p {
+      font-size: 13px;
+      color: #888;
+      line-height: 32px;
+    }
+
+    .social-bottom {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+
+      li {
+        padding: 0 10px;
+        display: inline-block;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        a {
+          color: #888;
+          font-size: 21px;
+        }
       }
     }
   }
