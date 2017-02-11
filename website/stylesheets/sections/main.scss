@@ -4,17 +4,25 @@
   height: 100vh;
 
   .navbar-toggler-right {
-    right: 3.5rem;
-    top: 3rem;
+    right: 1em;
+    top: 2.05em;
 
     @media (max-width: 767px) {
-      right: 1.75rem;
-      top: 3.45rem;
+      right: 1.15em;
+      top: 2.45em;
+    }
+
+    @media (max-width: 575px) {
+      right: 0;
     }
   }
 
+  .navbar-toggler img {
+    cursor: pointer;
+  }
+
   .navbar-inverse .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.45);
+    border: none;
   }
 
   .navbar {
@@ -25,9 +33,13 @@
     padding: 20px 60px;
     z-index: 999;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1366px) {
+      padding: 10px 30px 10px 0;
+    }
+
+    @media (max-width: 575px) {
       padding-left: 0;
-      padding-right: 0;
+      left: -15px;
     }
 
     .navbar-brand {
@@ -91,6 +103,10 @@
     margin-top: 70px;
     height: 100vh;
 
+    @media (max-width: 1440px) {
+      margin-top: 35px;
+    }
+
     h3 {
       margin-bottom: 15px;
       color: $white;
@@ -102,6 +118,18 @@
       font-size: 6rem;
       color: $white;
       letter-spacing: .02em;
+
+      @media (max-width: 1440px) {
+        font-size: 4.5rem;
+      }
+
+      @media (max-width: 1199px) {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 3.5rem;
+      }
 
       span {
 
@@ -115,6 +143,14 @@
       margin-bottom: 70px;
       font-size: 1.5rem;
       color: #bfbfbf;
+
+      @media (max-width: 991px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 767px) {
+        margin-bottom: 40px;
+      }
     }
 
     form {
@@ -190,23 +226,145 @@
     }
   }
 
-  .social {
-    position: absolute;
-    right: 80px;
-    bottom: 40px;
-    z-index: 999;
+  //.social {
+  //  position: absolute;
+  //  right: 80px;
+  //  bottom: 40px;
+  //  z-index: 999;
+  //
+  //  li {
+  //    padding: 0 10px;
+  //    display: inline-block;
+  //
+  //    a {
+  //
+  //      i {
+  //        color: $white;
+  //      }
+  //    }
+  //  }
+  //
+  //}
 
-    li {
-      padding: 0 10px;
-      display: inline-block;
+  .overlay {
+    position: fixed;
+    background: $blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
 
-      a {
+    .close-menu {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      width: 29px;
+    }
 
-        i {
-          color: $white;
+    nav {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+      text-align: center;
+
+      @media (max-width: 670px) {
+          font-size: 30px;
+      }
+
+      @media (max-width: 670px) {
+        font-size: 20px;
+      }
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+
+        li {
+          display: block;
+          position: relative;
+          opacity: 0;
+
+          a {
+            padding: 0;
+            display: block;
+            position: relative;
+            color: $white;
+            text-decoration: none;
+            overflow: hidden;
+            letter-spacing: .02em;
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+
+        &.social {
+          margin-top: 15px;
+
+          li {
+            padding: 0 5px;
+            display: inline-block;
+
+            a {
+
+              i {
+                color: $white;
+                font-size: 24px;
+              }
+            }
+          }
         }
       }
     }
 
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+      z-index: 999999;
+
+      nav {
+
+        ul {
+
+          li {
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .35s;
+
+            &:nth-of-type(2) {
+              animation-delay: .4s;
+            }
+
+            &:nth-of-type(3) {
+              animation-delay: .45s;
+            }
+
+            &:nth-of-type(4) {
+              animation-delay: .50s;
+            }
+          }
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          left: 20%;
+        }
+        100% {
+          opacity: 1;
+          left: 0;
+        }
+      }
+    }
   }
+
 }
