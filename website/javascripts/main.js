@@ -25,3 +25,14 @@ function toggleClass() {
 function removeClass() {
   overlay.classList.remove('open');
 }
+
+window.onscroll = function() {fixedNav()};
+var navi = document.querySelector('.navbar');
+
+function fixedNav() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    navi.classList.add('fixed')
+  } else {
+    navi.classList.remove('fixed');
+  }
+}
