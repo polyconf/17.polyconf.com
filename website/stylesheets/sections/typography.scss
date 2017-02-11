@@ -1,0 +1,29 @@
+.preamble {
+  margin-bottom: 4.5rem;
+
+  .title {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    line-height: 0.9765625em;
+  }
+
+  &.dark {
+
+    .lead {
+      color: #888;
+    }
+  }
+
+  &.light {
+
+    .title {
+      color: $white;
+    }
+
+    .lead {
+      color: #bfbfbf;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<main>
+<main id="main">
+
+  <div id="particles-js"></div>
+
   <nav class="navbar navbar-toggleable-md navbar-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,62 +14,67 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#main">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Agenda</a>
+          <a class="nav-link" href="#speakers">Speakers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Venue</a>
+          <a class="nav-link" href="#sponsors">Sponsors</a>
         </li>
       </ul>
+      <div class="cta ml-auto">
+        <a href="#">Submit Your Talk</a>
+      </div>
     </div>
   </nav>
 
-  <div id="particles-js"></div>
-
-  <div class="text">
-    <h3 class="mt-0 animate">JUL 1 - JUL 2, 2017 · POLAND</h3>
-    <h1 class="mt-0 animate">The <span class="color">Universe</span> of Virtual Machines</h1>
-    <p class="mt-0 animate">Let's take a journey to explore the waste universe of virtual machines: <br/>
-      to seek out new programming languages and to boldly go deep inside the bytecode</p>
-    <form action="//polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate animate" target="_blank" novalidate="">
-      <input type="email" value="" name="EMAIL" placeholder="Your e-mail address" class="required email" id="mce-EMAIL">
-      <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-    </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main-text d-flex">
+          <div class="d-flex align-items-center">
+            <div class="d-flex flex-column">
+              <h3 class="mt-0 animate text-uppercase">JUL 1 - JUL 2, 2017 · POLAND</h3>
+              <h1 class="mt-0 animate text-uppercase">The <span class="color">Universe</span> of Virtual Machines</h1>
+              <p class="mt-0 animate lead">Let's take a journey to explore the waste universe of virtual machines: <br/>
+                to seek out new programming languages and to boldly go deep inside the bytecode</p>
+              <form action="//polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate animate" target="_blank" novalidate="">
+                <input type="email" value="" name="EMAIL" placeholder="Your e-mail address" class="required email" id="mce-EMAIL">
+                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <ul class="social list-unstyled">
-    <li>
-      <a href="https://www.facebook.com/polyconf">
-        <i class="ion-social-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/polyconfhq">
-        <i class="ion-social-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/user/polyconf">
-        <i class="ion-social-youtube"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/polyconf">
-        <i class="ion-social-github"></i>
-      </a>
-    </li>
-  </ul>
+  <!--<ul class="social list-unstyled">-->
+    <!--<li>-->
+      <!--<a href="https://www.facebook.com/polyconf">-->
+        <!--<i class="ion-social-facebook"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a href="https://twitter.com/polyconfhq">-->
+        <!--<i class="ion-social-twitter"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a href="https://www.youtube.com/user/polyconf">-->
+        <!--<i class="ion-social-youtube"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a href="https://github.com/polyconf">-->
+        <!--<i class="ion-social-github"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+  <!--</ul>-->
 </main>
 
 
@@ -97,7 +105,7 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 ticket-order">
-        <h4 class="mb-3 float-left">Sounds perfect? Grab your ticket now!</h4>
+        <p class="lead mb-3 float-left">Sounds perfect? Grab your ticket now!</p>
         <a href="#" class="btn text-uppercase">Buy a ticket</a>
       </div>
     </div>
@@ -123,11 +131,29 @@
       </div>
       <div class="col-md-3 speaker">
         <div class="thumbnail">
-          <img src="images/avatar-team-1.jpg" alt="" class="img-fluid">
-          <ul class="tags list-unstyled">
-            <li><span>Javascript</span></li>
-            <li><span>Ruby</span></li>
-          </ul>
+          <div class="overlay">
+            <img src="images/avatar-team-1.jpg" alt="" class="img-fluid">
+            <ul class="tags list-unstyled">
+              <li><span>Javascript</span></li>
+              <li><span>Ruby</span></li>
+              <div class="overlay-shadow">
+                <div class="overlay-content">
+                  <ul class="overlay-social">
+                    <li>
+                      <a href="https://www.facebook.com/polyconf">
+                        <i class="ion-social-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/polyconfhq">
+                        <i class="ion-social-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
         </div>
         <div class="bio">
           <h6 class="name">John Doe</h6>

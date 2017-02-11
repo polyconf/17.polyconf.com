@@ -1,0 +1,212 @@
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .navbar-toggler-right {
+    right: 3.5rem;
+    top: 3rem;
+
+    @media (max-width: 767px) {
+      right: 1.75rem;
+      top: 3.45rem;
+    }
+  }
+
+  .navbar-inverse .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.45);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px;
+    z-index: 999;
+
+    @media (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .navbar-brand {
+
+      img {
+        max-height: 100px;
+      }
+    }
+
+    .navbar-nav {
+
+      .nav-item {
+
+        .nav-link {
+          padding: 20px 30px;
+          color: #bdbcbc;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+  }
+
+  .cta {
+    margin-top: 16px;
+
+    a {
+      padding: 12px 20px;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+      border: 2px solid $white;
+      text-decoration: none;
+      transition: .2s ease-in;
+
+      &:hover {
+        background: $white;
+        color: $navyBlue
+      }
+    }
+  }
+
+  canvas{
+    display: block;
+    vertical-align: bottom;
+  }
+
+  #particles-js{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: $navyBlue;
+  }
+
+  .main-text {
+    position: relative;
+    margin-top: 70px;
+    height: 100vh;
+
+    h3 {
+      margin-bottom: 15px;
+      color: $white;
+      font-size: 1.35rem;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 6rem;
+      color: $white;
+      letter-spacing: .02em;
+
+      span {
+
+        &.color {
+          color: $blue;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 70px;
+      font-size: 1.5rem;
+      color: #bfbfbf;
+    }
+
+    form {
+      margin: 0;
+
+      input {
+        margin-right: 6px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid $white;
+        height: 50px;
+        color: $white;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 275px;
+        outline: none;
+      }
+
+      button {
+        padding: 13.5px 26px;
+        border: 2px solid $white;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        background: transparent;
+        vertical-align: bottom;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+
+        &:hover {
+          background: $white;
+          color: #000;
+          transition: .2s ease-in;
+        }
+      }
+    }
+
+    .animate {
+      opacity: 0;
+      -webkit-animation: showText .6s forwards;
+      animation: showText .6s forwards;
+
+      &:first-child {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+
+      &:nth-child(2) {
+        -webkit-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+      }
+
+      &:nth-child(3) {
+        -webkit-animation-delay: 1.6s;
+        animation-delay: 1.6s;
+      }
+
+      &:nth-child(4) {
+        -webkit-animation-delay: 1.9s;
+        animation-delay: 1.9s;
+      }
+    }
+
+    @-webkit-keyframes showText {
+      0%   { -webkit-transform: translateY(10px); opacity: 0; }
+      100% { -webkit-transform: translateY(0px); opacity: 1; }
+    }
+    @keyframes showText {
+      0%   { transform: translateY(10px); opacity: 0; }
+      100% { transform: translateY(0px); opacity: 1; }
+    }
+  }
+
+  .social {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+    z-index: 999;
+
+    li {
+      padding: 0 10px;
+      display: inline-block;
+
+      a {
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+  }
+}
