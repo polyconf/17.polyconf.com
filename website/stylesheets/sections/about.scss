@@ -1,0 +1,29 @@
+#about {
+  position: relative;
+  padding: 120px 0 140px 0;
+  background: url(images/about-bg.jpg) no-repeat bottom right;
+  background-size: 55%;
+
+  .ticket-order {
+    margin-top: 4.5rem;
+
+    .btn {
+      padding: 13.5px 26px;
+      margin-top: -11px;
+      margin-left: 20px;
+      border: 2px solid $blue;
+      font-size: 13px;
+      font-weight: 700;
+      vertical-align: top;
+      color: $blue;
+      border-radius: 0;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+        transition: .2s ease-in;
+      }
+    }
+  }
+}
+
