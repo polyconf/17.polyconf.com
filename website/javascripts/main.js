@@ -14,6 +14,7 @@ var target = document.querySelector('.navbar-toggler');
 var overlay = document.querySelector('.overlay');
 var close = document.querySelector('.close-menu');
 var link = document.querySelector('.nav-link');
+var navi = document.querySelector('.navbar');
 target.addEventListener('click', toggleClass, false);
 close.addEventListener('click', removeClass, false);
 link.addEventListener('click', removeClass, false);
@@ -24,4 +25,16 @@ function toggleClass() {
 
 function removeClass() {
   overlay.classList.remove('open');
+}
+
+window.onscroll = function() {
+  fixedNav()
+};
+
+function fixedNav() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    navi.classList.add('fixed')
+  } else {
+    navi.classList.remove('fixed');
+  }
 }

@@ -7,6 +7,22 @@
     position: relative;
     margin-bottom: 30px;
 
+    &:hover {
+
+      .thumbnail {
+
+        .overlay-shadow {
+          opacity: 1;
+
+          .overlay-content {
+            opacity:1;
+            visibility: visible;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
     .thumbnail {
       position: relative;
 
@@ -27,6 +43,50 @@
             font-size: 11px;
             font-weight: 600;
             box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+          }
+        }
+      }
+
+      .overlay-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        background: $blue;
+        transition: all .3s ease-in-out;
+        transform: scale(1);
+
+        .overlay-content {
+          position: absolute;
+          margin-top: - 14px;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .3s ease 0s;
+          transform: scale(0.2);
+
+          .overlay-social {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+              padding: 0 5px;
+              display: inline-block;
+
+              a {
+
+                i {
+                  font-size: 24px;
+                  color: $white;
+                }
+              }
+            }
           }
         }
       }
