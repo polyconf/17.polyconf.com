@@ -1,0 +1,27 @@
+#terms {
+  position: relative;
+  padding: 130px 0;
+
+  .preamble {
+    margin-bottom: 3.5rem;
+  }
+
+  .icon {
+    max-width: 80px;
+
+    &.icon-chat {
+      margin-top: -15px;
+      margin-bottom: 35px !important;
+    }
+  }
+
+  .code-of-conduct {
+    padding: 35px 25px;
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

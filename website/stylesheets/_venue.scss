@@ -1,0 +1,26 @@
+#venue {
+  position: relative;
+  padding: 130px 0;
+  background: $blueBg;
+
+  #map {
+    height: 360px;
+    width: 100%;
+  }
+
+  .info-row {
+
+    .title {
+      color: $white;
+      font-size: 2.5rem;
+    }
+
+    .lead {
+      color: #bfbfbf;
+
+      &.lead-white {
+        color: $white;
+      }
+    }
+  }
+}
