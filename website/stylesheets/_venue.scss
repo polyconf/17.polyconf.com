@@ -1,6 +1,6 @@
 #venue {
   position: relative;
-  padding: 130px 0;
+  padding: 130px 0 110px 0;
   background: $blueBg;
 
   #map {
@@ -21,6 +21,22 @@
       &.lead-white {
         color: $white;
       }
+    }
+  }
+
+  .lead-title-transport {
+    color: $white;
+  }
+
+  .transport {
+    padding-top: 3rem;
+
+    .title {
+      color: $white;
+    }
+
+    p {
+      color: #BFBFC0;
     }
   }
 }
