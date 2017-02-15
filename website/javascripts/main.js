@@ -38,4 +38,3 @@ function fixedNav() {
     navi.classList.remove('fixed');
   }
 }
-
