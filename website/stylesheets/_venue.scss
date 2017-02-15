@@ -3,40 +3,29 @@
   padding: 130px 0 110px 0;
   background: $blueBg;
 
-  #map {
-    height: 360px;
-    width: 100%;
+  .preamble {
+    margin-bottom: 3.5rem;
   }
 
-  .info-row {
-
-    .title {
-      color: $white;
-      font-size: 2.5rem;
-    }
-
-    .lead {
-      color: #bfbfbf;
-
-      &.lead-white {
-        color: $white;
-      }
-    }
-  }
-
-  .lead-title-transport {
+  .description {
     color: $white;
   }
 
-  .transport {
-    padding-top: 3rem;
+  .image-holder {
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    top: 0;
+    right: 0;
 
-    .title {
-      color: $white;
-    }
-
-    p {
-      color: #BFBFC0;
+    .image-holder-background {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-size: cover !important;
+      z-index: 0;
     }
   }
 }
