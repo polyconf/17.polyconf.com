@@ -2,24 +2,16 @@
   position: relative;
   padding: 130px 0 0 0;
 
-  .ticket-order {
-    margin-top: 3.5rem;
+  #countdown {
+    margin-top: 10px;
+    margin-bottom: 3rem;
+    display: inline-block;
 
-    .btn {
-      padding: 13.5px 26px;
-      margin-top: -11px;
-      margin-left: 20px;
-      border: 2px solid $blue;
-      font-size: 13px;
-      font-weight: 700;
-      vertical-align: top;
-      color: $blue;
-      border-radius: 0;
+    h5 {
+      font-size: 3rem;
 
-      &:hover {
-        background: $blue;
-        color: $white;
-        transition: .2s ease-in;
+      &.days {
+        color: $blue;
       }
     }
   }
