@@ -1,0 +1,53 @@
+<section id="speakers">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble light">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="mt-0 title">
+              Speakers
+            </h1>
+            <p class="lead mb-0">
+              PolyConf is not focused on any particular language or area of technology.
+              We encourage diverse topics oriented towards the future of Computer Science.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {% for speaker in speakers %}
+      <div class="col-md-3 speaker">
+        <div class="thumbnail">
+          <div class="overlay">
+            <img src="images/avatar-team-1.jpg" alt="" class="img-fluid">
+            <ul class="tags list-unstyled">
+              <li><span>Javascript</span></li>
+              <li><span>Ruby</span></li>
+            </ul>
+            <div class="overlay-shadow">
+              <div class="overlay-content">
+                <ul class="overlay-social">
+                  <li>
+                    <a href="https://www.facebook.com/polyconf">
+                      <i class="ion-social-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/polyconfhq">
+                      <i class="ion-social-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bio">
+          <h6 class="name">John Doe</h6>
+          <p class="mb-0">Stack follows the BEM naming convention that focusses on logical code</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
