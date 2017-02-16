@@ -110,6 +110,11 @@
         a {
           color: #888;
           font-size: 21px;
+          transition: .2s ease-in;
+
+          &:hover {
+            color: $white;
+          }
         }
       }
     }
