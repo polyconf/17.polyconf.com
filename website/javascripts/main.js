@@ -60,7 +60,7 @@ Date.prototype.countdown = function (endTime) {
 };
 
 (function loop(){
-  var countdown = new Date(2017, 4, 19, 12).countdown();
+  var countdown = new Date(2017, 7, 26, 1).countdown();
   var clock = document.getElementById('countdown');
 
   clock.querySelector('.days').innerHTML = countdown.days;
