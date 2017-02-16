@@ -38,3 +38,5 @@ function fixedNav() {
     navi.classList.remove('fixed');
   }
 }
+
+baguetteBox.run('.gallery-row');
