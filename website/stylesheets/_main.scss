@@ -101,6 +101,11 @@
               background: $blue;
               color: $white;
             }
+
+            span {
+              border-left-color: darken($blue, 25%);
+              color: darken($blue, 25%)
+            }
           }
 
           &.buy-ticket {
@@ -110,6 +115,11 @@
             &:hover {
               background: $green;
               color: $white;
+            }
+
+            span {
+              border-left-color: darken($green, 25%);
+              color: darken($green, 25%)
             }
           }
         }
@@ -189,6 +199,13 @@
           border: 2px solid;
           text-decoration: none;
           transition: .2s ease-in;
+
+          span {
+            border-left: 1px solid $white;
+            padding-left: 12px;
+            margin-left: 8px;
+            color: $white;
+          }
 
           &.submit-talk {
             color: $white;
