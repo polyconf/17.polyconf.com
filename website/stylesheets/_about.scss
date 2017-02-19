@@ -2,6 +2,21 @@
   position: relative;
   padding: 130px 0 0 0;
 
+  @media (max-width: 1199px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 575px) {
+
+    .pr-m-0 {
+      padding-right: 2rem !important;
+    }
+  }
+
   #countdown {
     margin-top: 10px;
     margin-bottom: 3rem;
@@ -9,6 +24,10 @@
 
     h5 {
       font-size: 3rem;
+
+      @media (max-width: 1199px) {
+        font-size: 2rem;
+      }
 
       &.days {
         color: $blue;

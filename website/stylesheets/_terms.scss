@@ -2,6 +2,21 @@
   position: relative;
   padding: 130px 0;
 
+  @media (max-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 991px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 575px) {
+
+    .mb-xs-5 {
+      margin-bottom: 3rem !important;
+    }
+  }
+
   .code-of-conduct {
     padding: 35px 25px;
     border: 1px solid #e0e0e0;
