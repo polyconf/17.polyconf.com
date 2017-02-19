@@ -72,6 +72,9 @@
         width: 200px;
         outline: none;
 
+        @media (max-width: 460px) {
+          width: 100%;
+        }
       }
 
       button {
@@ -91,6 +94,10 @@
           color: #000;
           transition: .2s ease-in;
         }
+
+        @media (max-width: 460px) {
+          margin-top: 15px;
+        }
       }
     }
   }
@@ -109,6 +116,10 @@
       font-size: 13px;
       color: #888;
       line-height: 32px;
+
+      @media (max-width: 460px) {
+        font-size: 11px;
+      }
     }
 
     .social-bottom {
