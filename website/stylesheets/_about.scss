@@ -17,6 +17,16 @@
     }
   }
 
+  @media (max-width: 460px) {
+    .pr-m-0 {
+      padding-right: 1.5rem !important;
+
+      &:last-child {
+        padding-right: 0!important;
+      }
+    }
+  }
+
   #countdown {
     margin-top: 10px;
     margin-bottom: 3rem;
