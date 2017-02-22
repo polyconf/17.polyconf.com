@@ -8,18 +8,6 @@
     vertical-align: top;
     font-size: 1.15rem;
 
-    @media (max-width: 1199px) {
-      font-size: 1rem;
-    }
-
-    @media (max-width: 991px) {
-      padding-top: 0;
-    }
-
-    @media (max-width: 767px) {
-      font-size: 1.15rem;
-    }
-
     strong {
       color: $white;
     }
@@ -31,17 +19,11 @@
 
   .btn {
 
-    @media (max-width: 767px) {
-      margin-top: 15px;
-      float: none !important;
-    }
-
     &.btn-cta {
       padding: 13.5px 26px;
       border: 2px solid $white;
       font-size: 13px;
       font-weight: 600;
-      text-transform: uppercase;
       color: $white;
       background: transparent;
       vertical-align: bottom;
