@@ -484,24 +484,34 @@
             padding: 0;
             display: block;
             position: relative;
-            color: $white;
+            color: rgba(255,255,255,.75);
             text-decoration: none;
             overflow: hidden;
             letter-spacing: .02em;
-            font-size: 28px;
+            font-size: 3rem;
             font-weight: 700;
+            text-transform: none;
 
-            &.dark-color {
-              color: $navyBlue;
+            &:hover {
+              color: $white;
             }
           }
         }
 
         &.social {
-          margin-top: 15px;
+
+          &:before {
+            position: relative;
+            margin: 20px auto 5px auto;
+            width: 100px;
+            height: 2px;
+            background: $white;
+            display: block;
+            content: "";
+          }
 
           li {
-            padding: 0 5px;
+            padding: 0 8px;
             display: inline-block;
 
             a {

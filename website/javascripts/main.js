@@ -17,7 +17,7 @@ var link = document.querySelector('.nav-link');
 var navi = document.querySelector('.navbar');
 target.addEventListener('click', toggleClass, false);
 close.addEventListener('click', removeClass, false);
-link.addEventListener('click', removeClass, false);
+link.addEventListener('touchend', removeClass, false);
 
 function toggleClass() {
   overlay.classList.toggle('open');
@@ -71,3 +71,9 @@ Date.prototype.countdown = function (endTime) {
 
   setTimeout(loop, 1000);
 }());
+
+var cfpDate = new Date(2017, 2, 20, 1);
+var now  = new Date;
+var btnText = document.querySelector('#cfp-remaining');
+
+btnText.innerHTML = Math.round((cfpDate - now) / (1000 * 60 * 60 * 24)) + ' days';
