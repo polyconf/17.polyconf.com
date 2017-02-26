@@ -121,11 +121,16 @@
             &:hover {
               background: $blue;
               color: $white;
+
+              span {
+                color: $white;
+              }
             }
 
             span {
               border-left-color: darken($blue, 25%);
-              color: darken($blue, 25%)
+              color: darken($blue, 25%);
+              transition: .2s ease-in;
             }
           }
 
@@ -484,34 +489,24 @@
             padding: 0;
             display: block;
             position: relative;
-            color: rgba(255,255,255,.75);
+            color: $white;
             text-decoration: none;
             overflow: hidden;
             letter-spacing: .02em;
-            font-size: 3rem;
+            font-size: 28px;
             font-weight: 700;
-            text-transform: none;
 
-            &:hover {
-              color: $white;
+            &.dark-color {
+              color: $navyBlue;
             }
           }
         }
 
         &.social {
-
-          &:before {
-            position: relative;
-            margin: 20px auto 5px auto;
-            width: 100px;
-            height: 2px;
-            background: $white;
-            display: block;
-            content: "";
-          }
+          margin-top: 15px;
 
           li {
-            padding: 0 8px;
+            padding: 0 5px;
             display: inline-block;
 
             a {
@@ -530,9 +525,11 @@
       opacity: 1;
       visibility: visible;
       height: 100%;
+      display: block;
       z-index: 999999;
 
       nav {
+        z-index: 99999;
 
         ul {
 

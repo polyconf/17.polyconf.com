@@ -13,11 +13,11 @@ particlesJS("particles-js", {
 var target = document.querySelector('.navbar-toggler');
 var overlay = document.querySelector('.overlay');
 var close = document.querySelector('.close-menu');
-var link = document.querySelector('.nav-link');
+var overlayNav = document.querySelector('.overlay-menu');
 var navi = document.querySelector('.navbar');
 target.addEventListener('click', toggleClass, false);
 close.addEventListener('click', removeClass, false);
-link.addEventListener('touchend', removeClass, false);
+overlayNav.addEventListener('click', removeClass, false);
 
 function toggleClass() {
   overlay.classList.toggle('open');
