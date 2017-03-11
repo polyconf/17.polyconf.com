@@ -1,0 +1,81 @@
+#tickets {
+  padding: 100px 0;
+  background: #f5f5f5;
+
+  .ticket {
+
+    .ticket-inner {
+      padding: 3rem .5rem;
+      background: $white;
+      border-radius: 2px;
+
+      figure {
+        margin: 0 3rem 1.25rem 3rem;
+        padding: 0 0 1.5rem 0;
+        border-bottom: 1px solid lighten(#e0e0e0, 5%);
+
+        figcaption {
+
+          .title {
+            font-size: 1.35rem;
+            text-transform: uppercase;
+          }
+
+          span {
+            color: #888;
+            font-style: italic;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      header {
+
+        .price {
+          position: relative;
+          margin: 1rem 0 1.5rem 0;
+          font-size: 3.5rem;
+          color: $blue;
+          font-weight: 300;
+          letter-spacing: .01em;
+
+          .currency {
+            margin-right: 5px;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 1rem;
+            vertical-align: top;
+          }
+        }
+      }
+
+      .date {
+        margin: 1.5rem 3rem 0 3rem;
+        padding: 1.5rem 0;
+        border-top: 1px solid lighten(#e0e0e0, 5%);
+      }
+
+      a {
+
+        &.btn {
+          padding: 12px 20px;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 600;
+          border: 2px solid $blue;
+          text-decoration: none;
+          transition: .2s ease-in;
+          color: $blue;
+          border-radius: 0;
+
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+

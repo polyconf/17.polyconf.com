@@ -11,125 +11,129 @@
     position: relative;
     margin-bottom: 30px;
 
-    &:hover {
+    .speaker-inner {
+      height: 100%;
+      background: $white;
 
-      .thumbnail {
+      &:hover {
 
-        .overlay-shadow {
-          opacity: 1;
+        .thumbnail {
 
-          .overlay-content {
-            opacity:1;
-            visibility: visible;
-            transform: scale(1);
-          }
-        }
-      }
-    }
+          .overlay-shadow {
+            opacity: 1;
 
-    .thumbnail {
-      position: relative;
-
-      .tags {
-        position: absolute;
-        left: 14px;
-        bottom: -10px;
-
-        li {
-          padding: 4px 8px;
-          margin-bottom: 3px;
-          margin-right: 4px;
-          display: inline-block;
-          background: $white;
-          color: $blueBg;
-          text-transform: uppercase;
-          font-size: 11px;
-          font-weight: 600;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-
-          &:first-child {
-            border-left: 4px solid $green;
-          }
-
-          &:nth-child(2) {
-            border-left: 4px solid $blue;
-          }
-
-          &:nth-child(3) {
-            border-left: 4px solid #E76B61;
-          }
-
-          &:nth-child(4) {
-            border-left: 4px solid #FFA22C;
-          }
-
-          .counter {
-
-            &:before {
-              margin-left: 2px;
-              margin-right: 6px;
-              content: "•";
+            .overlay-content {
+              opacity:1;
+              visibility: visible;
+              transform: scale(1);
             }
           }
-
         }
       }
 
-      img {
-        width: 100%;
-      }
+      .thumbnail {
+        position: relative;
 
-      .overlay-shadow {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        background: $blue;
-        transition: all .3s ease-in-out;
-        transform: scale(1);
-
-        .overlay-content {
+        .tags {
           position: absolute;
-          margin-top: - 14px;
-          top: 50%;
+          left: 14px;
+          bottom: -10px;
+
+          li {
+            padding: 4px 8px;
+            margin-bottom: 3px;
+            margin-right: 4px;
+            display: inline-block;
+            background: $white;
+            color: $blueBg;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+            &:first-child {
+              border-left: 4px solid $green;
+            }
+
+            &:nth-child(2) {
+              border-left: 4px solid $blue;
+            }
+
+            &:nth-child(3) {
+              border-left: 4px solid #E76B61;
+            }
+
+            &:nth-child(4) {
+              border-left: 4px solid #FFA22C;
+            }
+
+            .counter {
+
+              &:before {
+                margin-left: 2px;
+                margin-right: 6px;
+                content: "•";
+              }
+            }
+
+          }
+        }
+
+        img {
           width: 100%;
-          text-align: center;
-          visibility: hidden;
+        }
+
+        .overlay-shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
           opacity: 0;
-          transition: all .3s ease 0s;
-          transform: scale(0.2);
+          background: $blue;
+          transition: all .3s ease-in-out;
+          transform: scale(1);
 
-          .overlay-social {
-            position: relative;
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
+          .overlay-content {
+            position: absolute;
+            margin-top: - 14px;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease 0s;
+            transform: scale(0.2);
 
-            li {
-              padding: 0 5px;
-              display: inline-block;
+            .overlay-social {
+              position: relative;
+              padding: 0;
+              margin: 0;
+              list-style-type: none;
 
-              a {
+              li {
+                padding: 0 5px;
+                display: inline-block;
 
-                i {
-                  font-size: 24px;
-                  color: $white;
+                a {
+
+                  i {
+                    font-size: 24px;
+                    color: $white;
+                  }
                 }
               }
             }
           }
         }
       }
-    }
 
-    .bio {
-      padding: 20px 20px;
-      background: $white;
+      .bio {
+        padding: 20px 20px;
 
-      p {
-        font-size: 14px;
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -17,31 +17,35 @@
 
       {% for speaker in data.speakers %}
       <div class="col-md-3 speaker">
-        <div class="thumbnail">
-          <div class="overlay">
-            <img src="{{ speaker.image }}" alt="" class="img-fluid">
-            <ul class="tags list-unstyled">
-              {% for topic in speaker.topics %}
-              <li>{{ topic }}</li>
-              {% endfor %}
-            </ul>
-            <div class="overlay-shadow">
-              <div class="overlay-content">
-                <ul class="overlay-social">
-                  <li><a href="https://github.com/{{ speaker.github }}"><i class="ion-social-github"></i></a></li>
-                  <li><a href="https://twitter.com/{{ speaker.twitter }}"><i class="ion-social-twitter"></i></a>
-                  </li>
-                </ul>
+        <div class="speaker-inner">
+          <div class="thumbnail">
+            <div class="overlay">
+              <img src="{{ speaker.image }}" alt="" class="img-fluid">
+              <ul class="tags list-unstyled">
+                {% for topic in speaker.topics %}
+                <li>{{ topic }}</li>
+                {% endfor %}
+              </ul>
+              <div class="overlay-shadow">
+                <div class="overlay-content">
+                  <ul class="overlay-social">
+                    <li><a href="https://github.com/{{ speaker.github }}" target="_blank"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://twitter.com/{{ speaker.twitter }}" target="_blank"><i class="ion-social-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="bio">
-          <h6 class="name">{{ speaker.name }}</h6>
-          <p class="mb-0">{{ speaker.tagline }}</p>
+          <div class="bio">
+            <h6 class="name">{{ speaker.name }}</h6>
+            <p class="mb-0">{{ speaker.tagline }}</p>
+            <p class="m-0">{{ speaker.company}}</p>
+          </div>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
