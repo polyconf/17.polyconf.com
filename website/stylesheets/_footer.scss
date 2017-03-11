@@ -52,6 +52,12 @@
           text-transform: uppercase;
           font-weight: 600;
           font-size: 12px;
+          transition: .2s ease-in;
+          text-decoration: none;
+
+          &:hover {
+            color: $white;
+          }
         }
       }
     }

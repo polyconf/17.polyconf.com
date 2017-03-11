@@ -128,8 +128,8 @@
             }
 
             span {
-              border-left-color: darken($blue, 25%);
-              color: darken($blue, 25%);
+              border-left-color: $blue;
+              color: $blue;
               transition: .2s ease-in;
             }
           }
