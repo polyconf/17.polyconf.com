@@ -1,13 +1,98 @@
 #tickets {
-  padding: 100px 0;
+  padding: 100px 0 80px 0;
   background: #f5f5f5;
+
+  @media (max-width: 991px) {
+    padding-bottom: 75px;
+  }
 
   .ticket {
 
     .ticket-inner {
+      position: relative;
       padding: 3rem .5rem;
       background: $white;
       border-radius: 2px;
+      border: 0;
+      vertical-align: middle;
+
+      &::before,
+      &::after {
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.draw {
+        transition: color 0.25s;
+
+        &::before,
+        &::after {
+          border: 2px solid transparent;
+          width: 0;
+          height: 0;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+        }
+
+        &::after {
+          bottom: 0;
+          right: 0;
+        }
+
+        &:hover::before,
+        &:hover::after {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover::before {
+          border-top-color: $blue;
+          border-right-color: $blue;
+          transition:
+                  width 0.25s ease-out,
+                  height 0.25s ease-out 0.25s;
+        }
+
+        &:hover::after {
+          border-bottom-color: $blue;
+          border-left-color: $blue;
+          transition:
+                  border-color 0s ease-out 0.5s,
+                  width 0.25s ease-out 0.5s,
+                  height 0.25s ease-out 0.75s;
+        }
+      }
+
+      &.meet {
+
+        &:hover {
+          color: $blue;
+        }
+
+        &::after {
+          top: 0;
+          left: 0;
+        }
+
+        &:hover::before {
+          border-top-color: $blue;
+          border-right-color: $blue;
+        }
+
+        &:hover::after {
+          border-bottom-color: $blue;
+          border-left-color: $blue;
+          transition:
+                  height 0.25s ease-out,
+                  width 0.25s ease-out 0.25s;
+        }
+      }
 
       figure {
         margin: 0 3rem 1.25rem 3rem;
@@ -57,6 +142,8 @@
       }
 
       a {
+        position: relative;
+        z-index: 99;
 
         &.btn {
           padding: 12px 20px;
@@ -74,6 +161,30 @@
             color: $white;
           }
         }
+      }
+    }
+  }
+
+  .list-features {
+
+    li {
+      position: relative;
+      margin-bottom: 15px;
+
+      .checked {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        display: inline-block;
+        max-height: 20px;
+      }
+
+      span {
+        margin-top: -2px;
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: top;
       }
     }
   }
