@@ -94,11 +94,17 @@ lessonGroup.forEach(function(item){
     this.classList.remove('hover');
   });
 
-  var description = item.querySelector('.description');
-  description.style.height = description.clientHeight + 'px';
-  description.classList.add('hidden');
+  var collapse = item.querySelector('.collapse-content');
+  var collapseHeight = collapse.clientHeight + 'px';
+  collapse.style.height = 0 + 'px';
 
   item.addEventListener('click', function() {
-    description.classList.toggle('hidden');
+    collapse.classList.toggle('hidden');
+
+    if(collapse.classList.contains('hidden')) {
+      collapse.style.height = 0 + 'px'
+    }else {
+      collapse.style.height = collapseHeight;
+    }
   });
 });
