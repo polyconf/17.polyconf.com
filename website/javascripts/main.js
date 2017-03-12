@@ -72,12 +72,33 @@ Date.prototype.countdown = function (endTime) {
   clock.querySelector('.minutes').innerHTML = countdown.minutes;
   clock.querySelector('.seconds').innerHTML = countdown.seconds;
 
-
   setTimeout(loop, 1000);
 }());
 
 var cfpDate = new Date(2017, 2, 20, 1);
 var now  = new Date;
-var btnText = document.querySelector('#cfp-remaining');
+var btnText = document.getElementById('cfp-remaining');
 
 btnText.innerHTML = Math.round((cfpDate - now) / (1000 * 60 * 60 * 24)) + ' days';
+
+var agenda = document.getElementById('agenda');
+var lesson = agenda.querySelectorAll('.lesson');
+var lessonGroup = [].slice.call(lesson);
+
+lessonGroup.forEach(function(item){
+  item.addEventListener('mouseover', function(){
+    this.classList.add('hover');
+  });
+
+  item.addEventListener('mouseout', function(){
+    this.classList.remove('hover');
+  });
+
+  var description = item.querySelector('.description');
+  description.style.height = description.clientHeight + 'px';
+  description.classList.add('hidden');
+
+  item.addEventListener('click', function() {
+    description.classList.toggle('hidden');
+  });
+});
