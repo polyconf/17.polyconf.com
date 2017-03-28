@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a href="#memories" class="nav-link scroll">Memories</a>
         </li>
-        <!--<li class="nav-item">-->
-          <!--<a class="nav-link scroll" href="#speakers">Speakers</a>-->
-        <!--</li>-->
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#tickets">Tickets</a>
+        </li>
         <!--<li class="nav-item">-->
           <!--<a class="nav-link scroll" href="#sponsors">Sponsors</a>-->
         <!--</li>-->
@@ -33,16 +33,14 @@
           <!--<a class="nav-link scroll" href="#venue">Venue</a>-->
         <!--</li>-->
         <li class="nav-item">
-          <a class="nav-link scroll" href="#terms">Terms</a>
+          <a class="nav-link scroll" href="#terms">Terms &amp; Code of Conduct</a>
         </li>
       </ul>
       <div class="cta ml-auto">
         <ul>
           <li>
-            {#
-              <a href="#" class="buy-ticket">Buy ticket</a>
-            #}
-            <a href="https://eventil.com/events/polyconf-17/submissions/new" class="submit-talk">Submit Your Talk <span id="cfp-remaining"></span></a>
+            <a href="https://eventil.com/events/polyconf-17/register" class="buy-ticket">Buy ticket</a>
+            <a href="https://eventil.com/events/polyconf-17/submissions/new" class="submit-talk">Submit Your Talk (CFP closed)</a>
           </li>
         </ul>
       </div>
@@ -116,12 +114,11 @@
 
 {% include "partials/about.html" %}
 {% include "partials/speakers.html" %}
-{% include "partials/agenda.html" %}
+{# {% include "partials/agenda.html" %} #}
 <!--{% include "partials/sponsors.html" %}-->
 {% include "partials/tickets.html" %}
 {% include "partials/gallery.html" %}
-{% include "partials/venue.html" %}
+{# {% include "partials/venue.html" %} #}
 {% include "partials/terms.html" %}
 
 {% endblock %}
-
