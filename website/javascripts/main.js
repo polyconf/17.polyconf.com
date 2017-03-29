@@ -75,36 +75,49 @@ Date.prototype.countdown = function (endTime) {
   setTimeout(loop, 1000);
 }());
 
-var cfpDate = new Date(2017, 2, 20, 1);
-var now  = new Date;
-var btnText = document.getElementById('cfp-remaining');
+// var cfpDate = new Date(2017, 2, 20, 1);
+// var now  = new Date;
+// var btnText = document.getElementById('cfp-remaining');
 
-btnText.innerHTML = Math.round((cfpDate - now) / (1000 * 60 * 60 * 24)) + ' days';
+// btnText.innerHTML = Math.round((cfpDate - now) / (1000 * 60 * 60 * 24)) + ' days';
 
-var agenda = document.getElementById('agenda');
-var lesson = agenda.querySelectorAll('.lesson');
-var lessonGroup = [].slice.call(lesson);
+// var agenda = document.getElementById('agenda');
+// var lesson = agenda.querySelectorAll('.lesson');
+// var lessonGroup = [].slice.call(lesson);
+//
+// lessonGroup.forEach(function(item){
+//   item.addEventListener('mouseover', function(){
+//     this.classList.add('hover');
+//   });
+//
+//   item.addEventListener('mouseout', function(){
+//     this.classList.remove('hover');
+//   });
+//
+//   var collapse = item.querySelector('.collapse-content');
+//   var collapseHeight = collapse.clientHeight + 'px';
+//   collapse.style.height = 0 + 'px';
+//
+//   item.addEventListener('click', function() {
+//     collapse.classList.toggle('hidden');
+//
+//     if(collapse.classList.contains('hidden')) {
+//       collapse.style.height = 0 + 'px'
+//     }else {
+//       collapse.style.height = collapseHeight;
+//     }
+//   });
+// });
 
-lessonGroup.forEach(function(item){
-  item.addEventListener('mouseover', function(){
-    this.classList.add('hover');
-  });
 
-  item.addEventListener('mouseout', function(){
-    this.classList.remove('hover');
-  });
+var alert = document.getElementById('alert');
+var closeAlert = document.getElementsByClassName('close')[0];
 
-  var collapse = item.querySelector('.collapse-content');
-  var collapseHeight = collapse.clientHeight + 'px';
-  collapse.style.height = 0 + 'px';
+if(localStorage.alert !== "false") {
+  alert.classList.remove('d-none');
+}
 
-  item.addEventListener('click', function() {
-    collapse.classList.toggle('hidden');
-
-    if(collapse.classList.contains('hidden')) {
-      collapse.style.height = 0 + 'px'
-    }else {
-      collapse.style.height = collapseHeight;
-    }
-  });
+closeAlert.addEventListener('click', function(){
+  localStorage.setItem("alert", "false");
+  alert.classList.add('d-none');
 });

@@ -1,0 +1,25 @@
+#alert {
+  position: relative;
+  padding: 15px 0;
+  background: $blue;
+
+  a {
+    text-decoration: none;
+
+    p {
+      color: $white;
+
+      strong {
+        font-weight: 600;
+        color: rgba(255,255,255,.8);
+      }
+    }
+  }
+
+  .close {
+    padding-right: 60px;
+    margin-top: -22px;
+    float: right;
+    max-height: 18px;
+  }
+}
