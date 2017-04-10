@@ -121,6 +121,13 @@
                     font-size: 24px;
                     color: $white;
                   }
+
+                  img {
+                    margin-top: -1px;
+                    margin-left: -5px;
+                    max-height: 20px;
+                    vertical-align: top;
+                  }
                 }
               }
             }
