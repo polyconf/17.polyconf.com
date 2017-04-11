@@ -27,6 +27,7 @@ speakers:
       - LuaJIT
     github: Etiene
     twitter: etiene_d
+    eventil:
   - name: Chris Seaton
     tagline: Research Manager
     company: at Oracle Labs
@@ -78,10 +79,11 @@ speakers:
     tagline: Software Engineer
     company: at Pinterest
     bio:
-    image: images/speakers/placeholder.jpg
+    image: images/speakers/imad_elyafi.jpg
     topics:
       - JavaScript
       - React
+    eventil: imad
   - name: Jameson Hampton
     title: There Is No Spoon? Understanding ‘Spoon Theory’ and Preventing Burnout
     tagline: Software Engineer
@@ -89,6 +91,7 @@ speakers:
     bio:
     image: images/speakers/jameson_hampton.jpg
     topics:
+    eventil: jameybash
   - name: Sean T Allen
     title: Why Pony?
     tagline: Pony Core Team
@@ -97,6 +100,7 @@ speakers:
     image: images/speakers/placeholder.jpg
     topics:
       - Pony
+    eventil: seantallen
   - name: Ainsley Escorce-Jones
     title: Protobuf all the way down
     tagline: Software Engineer @ Improbable
@@ -104,6 +108,7 @@ speakers:
     bio:
     image: images/speakers/ainsley_escorce_jones.jpg
     topics:
+    eventil: ains
   - name: Eryn O'Neil
     title: You're the Tech Lead! Now What?
     tagline: Independent Tech Lead and PHP Developer
@@ -112,6 +117,7 @@ speakers:
     image: images/speakers/eryn_oneil.jpg
     topics:
       - PHP
+    eventil: eryno
   - name: Armin Ronacher
     title: Rust at Sentry
     tagline: Software Engineer
@@ -121,6 +127,7 @@ speakers:
     topics:
       - Python
       - Rust
+    eventil: mitsuhiko
   - name: Terence Pae
     title: "Mobile Web to Native Development: JavaScript, React, Swift, and React Native"
     tagline: Senior Software Engineer
@@ -131,6 +138,7 @@ speakers:
       - JavaScript
       - Swift
       - React
+    eventil: tpae
   - name: Victor Nicollet
     title: Creating and using your own programming language
     tagline: CTO
@@ -138,6 +146,7 @@ speakers:
     bio:
     image: images/speakers/victor_nicollet.jpg
     topics:
+    eventil: victor-nicollet
   - name: Alexander Thiemann
     title: Reflecting on 5 years of Haskell in Production
     tagline: Software Developer
@@ -146,6 +155,7 @@ speakers:
     image: images/speakers/alexander_thiemann.jpg
     topics:
       - Haskell
+    eventil: alexander-thiemann
   - name: Franziska Schmidt
     title: Adventures in Homoiconicity
     tagline: Developer & ClojureBridge Organiser
@@ -154,6 +164,7 @@ speakers:
     image: images/speakers/franziska_schmidt.jpg
     topics:
       - Clojure
+    eventil: franka
   - name: Benoit Chesneau
     title: Building a database from scratch in Erlang
     tagline:
@@ -163,6 +174,7 @@ speakers:
     topics:
       - Python
       - Erlang
+    eventil: benoitc
   - name: Wojtek Erbetowski
     title: Going serverless
     tagline:
@@ -171,6 +183,7 @@ speakers:
     image: images/speakers/wojtek_erbetowski.jpg
     topics:
       - JavaScript
+    eventil: wojtekerbetowski
   - name: Tobias Pfeiffer
     title: Stop Guessing and Start Measuring - Benchmarking in Practice
     tagline: Senior Software Engineer
@@ -180,6 +193,7 @@ speakers:
     topics:
       - Ruby
       - Elixir
+    eventil: pragtob
   - name: Piotr Szotkowski
     title: The Modern Prometheus
     tagline: Cheap Science Officer
@@ -189,6 +203,7 @@ speakers:
     topics:
       - Ruby
       - Crystal
+    eventil: chastell
   - name: Thomas Wuerthinger
     title: One VM to Rule Them All
     tagline: Research Director
@@ -197,13 +212,18 @@ speakers:
     image: images/speakers/thomas_wuerthinger.jpg
     topics:
       - Java
+    eventil: thomaswue
   - name: Steven Goodwin
     title: Ada 99 - Rewriting the very first computer program
     tagline:
     company:
     bio:
-    image: images/speakers/placeholder.jpg
+    image: images/speakers/steven_goodwin.jpg
     topics:
+      - Ruby
+      - JavaScript
+      - C/C++
+    eventil: steven-goodwin
   - name: Makoto Inoue
     title: Solidity - Programming money on Blockchain
     tagline: Software Engineer
@@ -211,6 +231,7 @@ speakers:
     bio:
     image: images/speakers/makoto_inoue.jpg
     topics:
+    eventil: makoto
   - name: Hans Elias B. Josephsen
     title:
     tagline: Self-taught software engineer
