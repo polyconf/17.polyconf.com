@@ -73,3 +73,161 @@ speakers:
       - JavaScript
     github: captainsafia
     twitter: captainsafia
+  - name: Imad Elyafi
+    title: Migrating Pinterest profiles to React
+    tagline: Software Engineer
+    company: at Pinterest
+    bio:
+    image: images/speakers/placeholder.jpg
+    topics:
+      - JavaScript
+      - React
+  - name: Jameson Hampton
+    title: There Is No Spoon? Understanding ‘Spoon Theory’ and Preventing Burnout
+    tagline: Software Engineer
+    company: at Agrilyst
+    bio:
+    image: images/speakers/jameson_hampton.jpg
+    topics:
+  - name: Sean T Allen
+    title: Why Pony?
+    tagline: Pony Core Team
+    company:
+    bio:
+    image: images/speakers/placeholder.jpg
+    topics:
+      - Pony
+  - name: Ainsley Escorce-Jones
+    title: Protobuf all the way down
+    tagline: Software Engineer @ Improbable
+    company:
+    bio:
+    image: images/speakers/ainsley_escorce_jones.jpg
+    topics:
+  - name: Eryn O'Neil
+    title: You're the Tech Lead! Now What?
+    tagline: Independent Tech Lead and PHP Developer
+    company:
+    bio:
+    image: images/speakers/eryn_oneil.jpg
+    topics:
+      - PHP
+  - name: Armin Ronacher
+    title: Rust at Sentry
+    tagline: Software Engineer
+    company: at Sentry
+    bio:
+    image: images/speakers/armin_ronacher.jpg
+    topics:
+      - Python
+      - Rust
+  - name: Terence Pae
+    title: "Mobile Web to Native Development: JavaScript, React, Swift, and React Native"
+    tagline: Senior Software Engineer
+    company: at Tesla
+    bio:
+    image: images/speakers/terence_pae.jpg
+    topics:
+      - JavaScript
+      - Swift
+      - React
+  - name: Victor Nicollet
+    title: Creating and using your own programming language
+    tagline: CTO
+    company: at Lokad
+    bio:
+    image: images/speakers/victor_nicollet.jpg
+    topics:
+  - name: Alexander Thiemann
+    title: Reflecting on 5 years of Haskell in Production
+    tagline: Software Developer
+    company: at Checkpad MED
+    bio:
+    image: images/speakers/alexander_thiemann.jpg
+    topics:
+      - Haskell
+  - name: Franziska Schmidt
+    title: Adventures in Homoiconicity
+    tagline: Developer & ClojureBridge Organiser
+    company:
+    bio: Franka is a developer from Berlin. She organizes ClojureBridge workshops and likes cycling.
+    image: images/speakers/franziska_schmidt.jpg
+    topics:
+      - Clojure
+  - name: Benoit Chesneau
+    title: Building a database from scratch in Erlang
+    tagline:
+    company:
+    bio:
+    image: images/speakers/benoit_chesneau.jpg
+    topics:
+      - Python
+      - Erlang
+  - name: Wojtek Erbetowski
+    title: Going serverless
+    tagline:
+    company:
+    bio:
+    image: images/speakers/wojtek_erbetowski.jpg
+    topics:
+      - JavaScript
+  - name: Tobias Pfeiffer
+    title: Stop Guessing and Start Measuring - Benchmarking in Practice
+    tagline: Senior Software Engineer
+    company: at Liefery
+    bio:
+    image: images/speakers/placeholder.jpg
+    topics:
+      - Ruby
+      - Elixir
+  - name: Piotr Szotkowski
+    title: The Modern Prometheus
+    tagline: Cheap Science Officer
+    company: at Rebased
+    bio:
+    image: images/speakers/piotr_szotkowski.jpg
+    topics:
+      - Ruby
+      - Crystal
+  - name: Thomas Wuerthinger
+    title: One VM to Rule Them All
+    tagline: Research Director
+    company: at Oracle Labs Switzerland.
+    bio:
+    image: images/speakers/thomas_wuerthinger.jpg
+    topics:
+      - Java
+  - name: Steven Goodwin
+    title: Ada 99 - Rewriting the very first computer program
+    tagline:
+    company:
+    bio:
+    image: images/speakers/placeholder.jpg
+    topics:
+  - name: Makoto Inoue
+    title: Solidity - Programming money on Blockchain
+    tagline: Software Engineer
+    company: at SimplyBusiness
+    bio:
+    image: images/speakers/makoto_inoue.jpg
+    topics:
+  - name: Hans Elias B. Josephsen
+    title:
+    tagline: Self-taught software engineer
+    company:
+    bio:
+    image: images/speakers/hans_elias_bukholm_josephsen.jpg
+    topics:
+      - Elixir
+      - Rust
+      - Python
+  - name: Maxime Chevalier-Boisvert
+    title:
+    tagline: Architect of imaginary machines
+    company:
+    bio: CS PhD specialized in compiler design. Also interested in electronics, DIY, machine learning, 3D graphics and sound synthesis.
+    image: images/speakers/maxime_chevalier_boisvert.jpg
+    topics:
+      - JavaScript
+      - Python
+      - D
