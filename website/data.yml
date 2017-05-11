@@ -295,3 +295,15 @@ speakers:
     github: maximecb
     twitter: Love2Code
     eventil: maximecb
+  - name: Jonathan Boccara 
+    title: The spectrum of polymorphism
+    abstract: Even if polymorphism is one of the first concepts we learn as developers, it is actually a very profound notion in software construction. In this presentation taking C++ as an example, you’ll see that polymorphism can itself take a wide variety of shapes and in particular different moments of resolution. And more importantly, how to pick the one that is most adapted to your design.
+    tagline: Software Engineer 
+    company: Murex
+    bio: I've been a C++ software developer for 6 years, working for Murex which is a major software editor in the finance industry. My focus is on studying how to write expressive code, and how to make existing code more expressive. I sometimes take inspiration from Functional Programming with Haskell as a second language. And I blog regularly about expressive code in C++ on Fluent C++ (http://fluentcpp.com) 
+    image: images/speakers/jonathan_boccara.jpg
+    topics:
+      - C++
+    github: JoBoccara 
+    twitter: JoBoccara 
+    eventil: jonathan-boccara 
