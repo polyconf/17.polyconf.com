@@ -1,57 +1,58 @@
 <section id="workshops">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble dark">
         <div class="row">
-            <div class="col-md-10 preamble dark">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="mt-0 mb-0 title">
-                            Workshops
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <ul class="col-md-12 workshops-list list-unstyled mb-0">
-                <li class="row mb-5">
-                    <div class="author col-lg-3 text-center">
-                        <img src="images/speakers/jack_moffitt.jpg" alt="" class="img-fluid m-auto avatar">
-                        <a href="#" class="btn-cta btn-disabled d-block w-100 text-center mt-2 mb-4">Register (soon)</a>
-                    </div>
-                    <div class="content col-lg-6">
-                        <header>
-                            <h3 class="title mt-0 mb-2 text-uppercase">Get Creative with Facebook Camera Effects</h3>
-                            <p class="name lead mt-0 mb-4 d-block">with <a href="#">Jack Moffitt, Mozilla</a></p>
-                        </header>
-                        <div class="description mt-3">
-                            <h5 class="title mb-2 text-uppercase">Workshop description:</h5>
-                            <p>Reactive and Asynchronous applications are growing in popularity, but what is the best way to build them? This course teaches you how to apply the latest concurrency techniques to develop state of the art Java applications. With the rise of Microservices and Service Oriented Architectures, asynchronous concurrency is now critical to day-to-day Java development.</p>
-
-                            <p>We start off by reviewing the differences between asynchronous and synchronous programming. You then build upon this theory by refactoring a project using asynchronous servlets and Java 8’s CompletableFuture. You’ll learn the good, the bad and th.e ugly between these approaches in terms of compositionality, testability and simplicity.</p>
-                            <p>This course is face-paced and includes many practical exercises so you apply the new concepts immediately.</p>
-                        </div>
-                    </div>
-                    <div class="sidebar col-lg-3">
-                        <!--<h3 class="title mt-0 mb-2 text-uppercase">General informations</h3>-->
-                        <ul class="details list-unstyled p-0 m-0">
-                            <li class="mb-1 d-flex">
-                                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
-                                <p class="mb-1">Workshops Ticket Price: <strong>285 € + VAT.</strong></p>
-                            </li>
-                            <li class="mb-1 d-flex">
-                                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
-                                <p class="mb-1">Schedule: <strong>10:00 AM - 5:00 PM.</strong> Registration will start at 9:00 AM.</p>
-                            </li>
-                            <li class="mb-1 d-flex">
-                                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
-                                <p class="mb-1">Coffee and drinks during the day, lunch, paper and pen will be all provided.</p>
-                            </li>
-                            <li class="mb-1 d-flex">
-                                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
-                                <p class="mb-1"><strong>Please note that a computer will not be provided, so please bring your own laptop to the workshop.</strong></p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+          <div class="col-md-12">
+            <h1 class="mt-0 mb-0 title">Workshops</h1>
+          </div>
         </div>
+      </div>
+      <ul class="col-md-12 workshops-list list-unstyled mb-0">
+        {% for workshop in data.workshops %}
+        <li class="row mb-5">
+          <div class="author col-lg-3 text-center">
+            <img src="images/speakers/{{ workshop.name | lower | replace(' ', '_')}}.jpg" alt="" class="img-fluid m-auto avatar">
+            <a href="#" class="btn-cta btn-disabled d-block w-100 text-center mt-2 mb-4">Register (soon)</a>
+          </div>
+          <div class="content col-lg-6">
+            <header>
+              <h3 class="title mt-0 mb-2 text-uppercase">{{ workshop.title }}</h3>
+              <p class="name lead mt-0 mb-4 d-block">with <a href="{{ workshop.link }}">{{ workshop.name }}</a></p>
+            </header>
+            <div class="description mt-3">
+              <h5 class="title mb-2 text-uppercase">Description</h5>
+              {% markdown %}
+              {{ workshop.description }}
+              {% endmarkdown %}
+            </div>
+          </div>
+          <div class="sidebar col-lg-3">
+            <!--<h3 class="title mt-0 mb-2 text-uppercase">General informations</h3>-->
+            <ul class="details list-unstyled p-0 m-0">
+              <li class="mb-1 d-flex">
+                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
+                <p class="mb-1">Workshops Ticket Price: <strong>TBA €</strong></p>
+              </li>
+              <li class="mb-1 d-flex">
+                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
+                <p class="mb-1">Schedule: <strong>10:00 - 18:00</strong></p>
+              </li>
+              {% for requirement in workshop.requirments %}
+              <li class="mb-1 d-flex">
+                <img src="images/checked.svg" alt="" class="img-fluid mr-2">
+                <p class="mb-1">
+                  {% markdown %}
+                  {{ requirement }}
+                  {% endmarkdown %}
+                  </p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </section>

@@ -307,3 +307,315 @@ speakers:
     github: JoBoccara 
     twitter: JoBoccara 
     eventil: jonathan-boccara 
+
+agenda:
+  day1:
+    name: Friday, July 7
+    slots:
+      - start: "14:00"
+        end: "14:30"
+        length: 30 min
+        type: regular
+        name: Steven Goodwin
+        title: Ada 99 - Rewriting the very first computer program
+        abstract: When working in C++ I tend to solve every problem with a C++-shaped hammer. When working in Javascript, every problem looks like a Javascript-shaped hammer. And so on. Getting back to thinking about the problem first, and the implementation second, is a difficult mind shift. So I set about re-writing the same code in each of the 16 different languages in which I’ve professionally developed. This talk will take you on that journey of discovery highlighting many ideas to expand your own thought processes.
+        topics:
+          - Ada
+          - General Programming
+          - C++
+          - JavaScript
+      - start: '14:40'
+        end: '15:10'
+        length: 30 min
+        type: regular
+        name: Benoit Chesneau
+        title: Building a database from scratch in Erlang
+        abstract: During the last months I've written from scratch Barrel is a modern document-oriented database with master-master replication targeting micro-services with a RESTful API written in Erlang. This talk will describe the different challenges we faced in writing a database, from binding C code in Erlang, to write a complete SQL Engine. This talk will also describe the different patterns used for Reads and Writes concurrency but also continuous automated indexation of the documents.
+        topics:
+          - Erlang
+          - Database
+          - SQL
+          - API
+      - start: '15:20'
+        end: '15:50'
+        length: 30 min
+        type: regular
+        name: Wojtek Erbetowski
+        title: Going serverless
+        abstract: Serverless might change the industry in a big way. Miss it out and you soon might be out of business, as your competition will save huge infrastructure money, developers time and will scale better than you. Presentation is an introduction, but with hard technical insights on how the serverless is really different what classic and microservices design.
+        topics:
+          - Serverless
+          - Architecture
+          - Infrastructure
+      - start: '16:00'
+        end: '16:30'
+        length: 30 min
+        type: regular
+        name: Jameson Hampton
+        title: There Is No Spoon? Understanding ‘Spoon Theory’ and Preventing Burnout
+        abstract: Spoon theory is a metaphor about the finite energy we each have to do things in a day. While a healthy, advantaged person may not have to worry about running out of ‘spoons,’ people with chronic illnesses or disabilities and members of marginalized groups must consider how to ration their energy to get through the day. Understanding this can help companies lessen the everyday burdens on their underrepresented employees, leaving them more spoons to do their best work, avoid burnout and lead fulfilling lives.
+        topics:
+          - Programming
+          - Psychology
+          - Best Practices
+      - start: '16:40'
+        end: '17:10'
+        length: 30 min
+        name: Imad Elyafi
+        type: regular
+        title: Migrating Pinterest profiles to React
+        abstract: We all have been in situation when we were in one platform and had to move to another. While it’s relatively easy to build a new web app in React, migrating a service that’s constantly changing and used by millions of people is a much more complicated challenge. It’s like changing the engines of an airplane while mid-flight. The talk is about techniques we tried and challenges we faced while migrating to React at Pinterest.
+        topics:
+          - React
+          - Architecture
+          - Infrastructure
+          - Best Practices
+      - start: '17:10'
+        end: '17:40'
+        title: Coffee Break
+      - start: '17:40'
+        end: '18:10'
+        length: 
+        type: regular
+        name: Etiene Dalcol 
+        title: TBA
+        abstract:
+        topics:
+          - Lua
+          - LuaJIT
+          - Virtual Machine
+      - start: '18:20'
+        end: '19:00'
+        length: 
+        type: regular
+        name: TBA
+        title: TBA 
+        abstract:
+        topics:
+
+  day2:
+    name: Saturday, July 8
+    slots:
+      - start: '9:00'
+        end: '9:30'
+        length: 30 min
+        type: regular
+        name: Ainsley Escorce-Jones
+        title: Protobuf all the way down
+        abstract: Across the stack at Improbable we have components written in ~5 different languages, and we rely heavily on Google's protocol buffers to tie them all together. In this talk we'll discuss what protocol buffers are, how we use them at Improbable, and some of the extensions we've built on top of protocol buffers to add validation, logging and how it forms the basis of our custom ORM layer.
+        topics:
+          - Integration 
+          - Infrastructure
+      - start: '9:40'
+        end: '10:10'
+        length: 30 min
+        type: regular
+        name: Eryn O'Neil
+        title: You're the Tech Lead! Now What?
+        abstract: Congratulations! You’re the technical lead on your next project! But now what? The lead can be responsible for requirements, architecture, communication with clients or managers, or divvying work amongst the team–and that's just what they tell you about ahead of time. We’ll talk about how to oversee the project without losing sight of the day to day, how to motivate your team without overstepping your bounds, and tactics to deal with issues you might not anticipate, but will almost certainly encounter.
+        topics:
+          - Technical Management
+      - start: '10:20'
+        end: '10:50'
+        length: 30 min
+        type: regular
+        name: Alexander Thiemann
+        title: Reflecting on 5 years of Haskell in Production
+        abstract: I have been using Haskell in production at Checkpad MED, TramCloud and other many projects for more than 5 years and would like to discuss the advantages and challenges discovered during this time. We will look at first principles on structuring, building and testing Haskell applications at scale, discuss interfacing and deployment of microservices, performance and practical considerations like debugging, tooling support and IDEs.
+        topics:
+          - Haskell
+      - start: '11:20'
+        end: '11:50'
+        length: 30 min
+        type: regular
+        name: Armin Ronacher
+        title: Rust at Sentry
+        abstract: The usage of Rust started as an experiment at Sentry but became a non negligible part of our infrastructure. This is lessons learned, what works and doesn't and what we think is going to happen in the future.
+        topics:
+          - Rust
+      - start: '12:00' 
+        end: '12:30'
+        length: 30 min
+        type: regular
+        name: Victor Nicollet
+        title: Creating and using your own programming language
+        abstract: In 2013, we decided to build our own programming language to fill a narrow but critical role in our technology stack. Four years later, this talk dives into our reasons for doing so, our experiences as a small team in running production code through a compiler that we were writing at the same time, and what it took to ensure the stability of our domain-specific language and the proficiency of its users. 
+        topics:
+          - Programming Language Design
+      - start: '14:00'
+        end: '14:30'
+        length: 30 min
+        type: regular
+        name: Franziska Schmidt
+        title: Adventures in Homoiconicity
+        abstract: 'Homoiconicity is a word the Clojure community likes to use heavily. It’s a cool property of the Clojure language: it means that code can be treated as data. We as computer people are used to handling data: we can visualise it, analyse it and even generate it. What does it imply if we can do the same things with our Clojure code? I will investigate this question through a series examples and hopefully help you understand this abstract concept better.'
+        topics:
+          - Clojure
+      - start: '14:40'
+        end: '15:10'
+        length: 
+        type: regular
+        name: Piotr Szotkowski
+        title: The Modern Prometheus
+        abstract: 'Most non-scripting languages are faster than Ruby (Rust: tremendously so), but few (Crystal?) can match its optimisation for developer happiness and productivity. Let’s try to gauge Ruby’s chances when it comes to matching modern performance expectations: Are the changes in recent CRuby versions significant? Can JRuby bring enough JVM performance? And – to address the titular Frankenstein – how easily can we harness the power of Crystal, Rust, C or even assembly from within our Ruby applications?'
+        topics:
+          - Ruby 
+          - Crystal
+          - Assembly
+          - C
+          - JVM
+      - start: '16:00'
+        end: '16:30'
+        length: 30 min
+        type: regular
+        name: Sean T Allen
+        title: Why Pony?
+        abstract: Pony is a new language designed to make fast, concurrent programing simple. Its actor-based concurrency and advanced type system ensure programs are data race and deadlock free. We'll compare Pony to more mature technologies, starting with when you shouldn't use it, when you should, and what your alternatives might be. You'll learn about Pony's design philosophy, how the actors simplify writing safe code and more. You'll leave understanding what Pony is and if it's something you might use.
+        topics:
+          - Pony
+          - Actor-based
+          - Programming Language Design
+      - start: '16:40'
+        end: '17:10'
+        length: 30 min
+        type: regular
+        name: Anjana Sofia Vakil
+        title: TBA
+        abstract: 
+        topics:
+          - 
+      - start: '17:40' 
+        end: '18:20'
+        length: 40 min
+        type: regular
+        name: Chris Seaton 
+        title: Polyglot From the Very Old to the Very New 
+        abstract: Writing programs in a high-level language such as Ruby, with extensions written in C, is probably the earliest form of polyglot. In GraalVM we're rethinking this from first principles and actually interpreting C extensions using the latest in virtual machine technology.
+        topics:
+          - Ruby
+          - Virtual Machine
+          - JVM
+      - start: '18:30'
+        end: '19:10'
+        length: 40 min
+        type: regular
+        name: Maxime Chevalier-Boisvert
+        title: TBA
+        abstract: 
+        topics:
+          - Programming Language Design
+          - Virtual Machine
+  day3:
+    name: Sunday, July 9
+    slots:
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Hans Elias B. Josephsen
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Makoto Inoue
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Tobias Pfeiffer
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Terence Pae
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Thomas Wuerthinger
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Jonathan Boccara
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: 
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Safia Abdalla
+        title: 
+        abstract: 
+        topics:
+          - 
+      - start: 
+        end: 
+        length: 
+        type: regular
+        name: Jack Moffitt
+        title: 
+        abstract: 
+        topics:
+          - 
+
+workshops:
+  - title: An Intro to React Workshop
+    name: Wes Bos
+    link: http://wesbos.com/
+    description: |
+      This is a 1 day, 6-8 hour workshop aimed at understanding the fundamentals of React. Throughout the day we will work to incrementally build an application touching all every major point of React:
+
+      * Creating Components and writing HTML with JSX
+      * Routing with React Router
+      * Understanding State and holding data
+      * Passing data between components with with Props
+      * Fetching data from an Ajax endpoint
+      * Persisting data with LocalStorage
+      * Working with Events in React
+      * Working with Forms, retrieving data from DOM inputs
+      * Stateless Functional Components
+      * React Deployment
+
+
+      Together we will build [React.Beer](http://React.beer), an interactive Beer explorer single page application. Along the way we will learn each fundamental concept, take time to implement it in our application and understand both the _Whys_ and _hows_ of the way React works.
+
+      Students are expected to have Beginner to intermediate JavaScript skills — you should know how functions, variables, arguments and all the basics of JavaScript work.
+    requirments:
+      - Please note that a computer will not be provided, so please bring your own laptop to the workshop
+      - the latest version of Node.js Installed - you can download the installer over at Nodejs.org. If you aren't sure if you have node installed, open a terminal window and type `node -v`, compare that against the latest version at http://nodejs.org
+      - A terminal / command line application. For Windows I recommend [cmder](http://cmder.net/), though the built in one will work just fine. For OSX built in Terminal, [iTerm2](https://www.iterm2.com/) or [Hyper.app](https://hyperterm.now.sh/) will work as well. 
+      - 'A text editor. You may use any editor but here are some good ones: Sublime Text with [Babel-Sublime](https://github.com/babel/babel-sublime) syntax highlighter installed or [Atom](https://atom.io/)'
+    bio: >
+      Wes Bos is a full stack developer and teacher from Hamilton, Canada. With a knack for breaking down technical concepts and converting them into fun, digestable bits, Wes creates some of the best online courses related to web development. He is the author or [React For Beginners](http://ReactforBeginners.com), [ES6 for Everyone](https://ES6.io), [What the Flexbox?!][http://flexbox.io] and [many other courses](http://wesbos.com/courses). You can catch Wes posting 🔥 Hot Tips on his [twitter](https://twitter.com/wesbos) where he is most active.

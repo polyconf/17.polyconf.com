@@ -1,54 +1,57 @@
 <section id="agenda">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble dark">
         <div class="row">
-            <div class="col-md-10 preamble dark">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="mt-0 mb-0 title">
-                            Agenda
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="schedule col-md-12">
-                        <div class="schedule-inner">
-                            <header class="day">
-                                <h4 class="title mt-0 mb-0 text-uppercase">Friday, July 7</h4>
-                            </header>
-                            <ul class="schedule-list list-unstyled mb-0">
-                                <li class="lesson">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <h5 class="time text-uppercase"><span class="start">9.00</span> - <span class="end">11.00</span> <span class="minutes">(40min)</span></h5>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <header class="d-block w-100">
-                                                <div class="header-content float-left">
-                                                    <h5 class="title mt-0 mb-2 text-uppercase">Get Creative with Facebook Camera Effects Platform <span class="keynote"></span></h5>
-                                                    <p class="name lead mt-0 mb-0 d-block">with John Doe, Company</p>
-                                                </div>
-                                                <div class="header-thumbnail float-right d-flex align-items-center">
-                                                    <img src="images/speakers/jack_moffitt.jpg" alt="">
-                                                </div>
-                                            </header>
-                                            <div class="collapse-content w-100 d-block mt-3 hidden">
-                                                <p class="description mb-3">Get Creative With Camera Effects Platform: Camera-first experiences are a great way to keep people engaged. Come learn more about our Camera Effects Platform, a tool you can use to develop and submit frames that can be used by other people with photos and videos they capture and share on Facebook.</p>
-                                                <ul class="tags list-unstyled p-0 m-0 list-inline">
-                                                    <li>Vue <span class="counter">8</span></li>
-                                                    <li>Java <span class="counter">9</span></li>
-                                                    <li>Clojure <span class="counter">10</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-12"><h1 class="mt-0 mb-0 title">Agenda</h1></div>
         </div>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="schedule col-md-12">
+            <div class="schedule-inner">
+              <header class="day">
+                <h4 class="title mt-0 mb-0 text-uppercase">Friday, July 7</h4>
+              </header>
+              <ul class="schedule-list list-unstyled mb-0">
+                {% for slot in data.agenda.day1.slots %}
+                <li class="lesson">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <h5 class="time text-uppercase">
+                        <span class="start">{{ slot.start }}</span> - 
+                        <span class="end">{{ slot.end }}</span> 
+                        <br>
+                        <span class="minutes">{{ slot.length }}</span>
+                      </h5>
+                    </div>
+                    <div class="col-md-10">
+                      <header class="d-block w-100">
+                        <div class="header-content float-left">
+                          <h5 class="title mt-0 mb-2 text-uppercase">{{ slot.title }}</h5>
+                          <p class="name lead mt-0 mb-0 d-block">with {{ slot.name }}</p>
+                        </div>
+                        <div class="header-thumbnail float-right d-flex align-items-center">
+                          <img src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') }}.jpg" alt="">
+                        </div>
+                      </header>
+                      <div class="collapse-content w-100 d-block mt-3 hidden">
+                        <p class="description mb-3">{{ slot.abstract }}</p>
+                        <ul class="tags list-unstyled p-0 m-0 list-inline">
+                          {% for topic in slot.topics %}
+                          <li>{{ topic }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
