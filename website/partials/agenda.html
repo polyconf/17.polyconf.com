@@ -7,14 +7,15 @@
         </div>
       </div>
       <div class="col-md-12">
+        {% for day in data.agenda %}
         <div class="row">
           <div class="schedule col-md-12">
             <div class="schedule-inner">
               <header class="day">
-                <h4 class="title mt-0 mb-0 text-uppercase">Friday, July 7</h4>
+                <h4 class="title mt-0 mb-0 text-uppercase">{{ day.name }}</h4>
               </header>
               <ul class="schedule-list list-unstyled mb-0">
-                {% for slot in data.agenda.day1.slots %}
+                {% for slot in day.slots %}
                 <li class="lesson">
                   <div class="row">
                     <div class="col-md-2">
@@ -29,10 +30,10 @@
                       <header class="d-block w-100">
                         <div class="header-content float-left">
                           <h5 class="title mt-0 mb-2 text-uppercase">{{ slot.title }}</h5>
-                          <p class="name lead mt-0 mb-0 d-block">with {{ slot.name }}</p>
+                          <p class="name lead mt-0 mb-0 d-block">with <strong>{{ slot.name }}</strong></p>
                         </div>
                         <div class="header-thumbnail float-right d-flex align-items-center">
-                          <img src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') }}.jpg" alt="">
+                          <img src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') | replace('\'', '')}}.jpg" alt="">
                         </div>
                       </header>
                       <div class="collapse-content w-100 d-block mt-3 hidden">
@@ -51,6 +52,7 @@
             </div>
           </div>
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>

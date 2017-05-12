@@ -105,7 +105,7 @@ speakers:
     tagline: Pony Core Team
     company:
     bio:
-    image: images/speakers/placeholder.jpg
+    image: images/speakers/sean_t_allen.jpg
     topics:
       - Pony
     github: SeanTAllen
@@ -116,7 +116,7 @@ speakers:
     tagline: Software Engineer @ Improbable
     company:
     bio:
-    image: images/speakers/ainsley_escorce_jones.jpg
+    image: images/speakers/ainsley_escorce-jones.jpg
     topics:
     github: ains
     twitter: ainsej
@@ -269,7 +269,7 @@ speakers:
     github: makoto
     twitter: makoto_inoue
     eventil: makoto
-  - name: Hans Elias B. Josephsen
+  - name: Hans Elias Bukholm Josephsen
     title:
     tagline: Self-taught software engineer
     company:
@@ -287,7 +287,7 @@ speakers:
     tagline: Architect of imaginary machines
     company:
     bio: CS PhD specialized in compiler design. Also interested in electronics, DIY, machine learning, 3D graphics and sound synthesis.
-    image: images/speakers/maxime_chevalier_boisvert.jpg
+    image: images/speakers/maxime_chevalier-boisvert.jpg
     topics:
       - JavaScript
       - Python
@@ -309,8 +309,7 @@ speakers:
     eventil: jonathan-boccara 
 
 agenda:
-  day1:
-    name: Friday, July 7
+  - name: Friday, July 7
     slots:
       - start: "14:00"
         end: "14:30"
@@ -390,11 +389,10 @@ agenda:
         type: regular
         name: TBA
         title: TBA 
-        abstract:
+        abstract: TBA
         topics:
 
-  day2:
-    name: Saturday, July 8
+  - name: Saturday, July 8
     slots:
       - start: '9:00'
         end: '9:30'
@@ -483,7 +481,8 @@ agenda:
         title: TBA
         abstract: 
         topics:
-          - 
+          - Python
+          - JavaScript
       - start: '17:40' 
         end: '18:20'
         length: 40 min
@@ -505,90 +504,101 @@ agenda:
         topics:
           - Programming Language Design
           - Virtual Machine
-  day3:
-    name: Sunday, July 9
+  - name: Sunday, July 9
     slots:
-      - start: 
-        end: 
-        length: 
+      - start: 0900
+        end: 0930 
+        length: 30 min 
         type: regular
-        name: Hans Elias B. Josephsen
-        title: 
-        abstract: 
+        name: Hans Elias Bukholm Josephsen
+        title: TBA
+        abstract: TBA
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Erlang
+          - Elixir
+      - start: 0940
+        end: 1010
+        length: 30 min
         type: regular
         name: Makoto Inoue
-        title: 
-        abstract: 
+        title: Solidity - Programming money on Blockchain
+        abstract: Solidity is a programming language to create a smart contract on Ethereum blockchian. Smart contract enables you to codify how monetary value is transferred. Makoto is the creator of BlockParty, a meetup management blockchain app (with a twist) built on Ethereum, and have used to manage real world events. He will show you how writing smart contract enforces developers to write a code in the unique way which you don't think about writing code in any other languages.
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Solidity
+          - Blockchain
+          - Ethereum
+      - start: 1020
+        end: 1050
+        length: 30 min
         type: regular
         name: Tobias Pfeiffer
-        title: 
-        abstract: 
+        title: Stop Guessing and Start Measuring - Benchmarking in Practice
+        abstract: “What’s the fastest way of doing this?” - you might ask yourself during development. Sure, you can guess, your intuition might be correct - but how do you know? Benchmarking is here to give you the answers, but there are many pitfalls in setting up a good benchmark and analyzing the results. This talk will guide you through, introduce best practices, and surprise you with some unexpected benchmarking results. You didn’t think that the order of arguments could influence its performance...or did you?
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Best Practices
+          - Benchmarking
+      - start: 1120
+        end: 1150
+        length: 30 min
         type: regular
         name: Terence Pae
-        title: 
-        abstract: 
+        title: 'Mobile Web to Native Development: JavaScript, React, Swift, and React Native'
+        abstract: Today, mobile web traffic is greater than desktop traffic. Many of us didn't think this would be possible, 10 years ago. Most of our tools were built around desktop web has been long obsolete, but they still haunt us in our transition to mobile web development. With the evolution of JavaScript (es6 and beyond), along with React, we are getting closer to native development. With the benefit of mobile web (ubiquitous and cross platform), along with native-like experience, what will the future be like?
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Mobile
+          - JavaScript
+          - React
+          - Swift
+          - React Native
+      - start: 1200
+        end: 1230
+        length: 30 min
         type: regular
         name: Thomas Wuerthinger
-        title: 
-        abstract: 
+        title: One VM to Rule Them All
+        abstract: Graal is a new just-in-time compiler for the Java Virtual Machine with support for the Truffle polyglot framework. Integrated language runtimes include JavaScript, Ruby, and R. Additionally, it supports LLVM-based languages such as C, C++, Go, and Rust. Graal enables seamless language interoperability while also providing world-class performance for each individual language. A demo will show how JavaScript, Java, Ruby, R, and C can work together in a single web application running in one VM!
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Virtual Machine
+          - Programming Language Design
+          - JavaScript
+          - Ruby
+          - R 
+          - LLVM
+          - C/C++
+          - Rust
+          - Go
+      - start: 1400
+        end: 1430
+        length: 30 min
         type: regular
         name: Jonathan Boccara
-        title: 
-        abstract: 
+        title: The spectrum of polymorphism
+        abstract: Even if polymorphism is one of the first concepts we learn as developers, it is actually a very profound notion in software construction. In this presentation taking C++ as an example, you’ll see that polymorphism can itself take a wide variety of shapes and in particular different moments of resolution. And more importantly, how to pick the one that is most adapted to your design.
         topics:
-          - 
+          - C++
+          - Programming Concepts
       - start: 
         end: 
-        length: 
-        type: regular
-        name: 
-        title: 
-        abstract: 
-        topics:
-          - 
-      - start: 
-        end: 
-        length: 
+        title: Coffee Break
+      - start: 1740
+        end: 1820
+        length: 40 min
         type: regular
         name: Safia Abdalla
-        title: 
-        abstract: 
+        title: TBA
+        abstract: TBA
         topics:
-          - 
-      - start: 
-        end: 
-        length: 
+          - Python
+      - start: 1830
+        end: 1910
+        length: 40 min
         type: regular
         name: Jack Moffitt
-        title: 
-        abstract: 
+        title: TBA
+        abstract: TBA
         topics:
-          - 
+          - Rust
+          - Servo
 
 workshops:
   - title: An Intro to React Workshop
