@@ -18,10 +18,9 @@
           <div class="content col-lg-6">
             <header>
               <h3 class="title mt-0 mb-2 text-uppercase">{{ workshop.title }}</h3>
-              <p class="name lead mt-0 mb-4 d-block">with <a href="{{ workshop.link }}">{{ workshop.name }}</a></p>
+              <p class="name lead mt-0 d-block">with <a href="{{ workshop.link }}">{{ workshop.name }}</a></p>
             </header>
             <div class="description mt-3">
-              <h5 class="title mb-2 text-uppercase">Description</h5>
               {% markdown %}
               {{ workshop.description }}
               {% endmarkdown %}
