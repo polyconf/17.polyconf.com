@@ -295,18 +295,18 @@ speakers:
     github: maximecb
     twitter: Love2Code
     eventil: maximecb
-  - name: Jonathan Boccara 
+  - name: Jonathan Boccara
     title: The spectrum of polymorphism
     abstract: Even if polymorphism is one of the first concepts we learn as developers, it is actually a very profound notion in software construction. In this presentation taking C++ as an example, you’ll see that polymorphism can itself take a wide variety of shapes and in particular different moments of resolution. And more importantly, how to pick the one that is most adapted to your design.
-    tagline: Software Engineer 
+    tagline: Software Engineer
     company: Murex
-    bio: I've been a C++ software developer for 6 years, working for Murex which is a major software editor in the finance industry. My focus is on studying how to write expressive code, and how to make existing code more expressive. I sometimes take inspiration from Functional Programming with Haskell as a second language. And I blog regularly about expressive code in C++ on Fluent C++ (http://fluentcpp.com) 
+    bio: I've been a C++ software developer for 6 years, working for Murex which is a major software editor in the finance industry. My focus is on studying how to write expressive code, and how to make existing code more expressive. I sometimes take inspiration from Functional Programming with Haskell as a second language. And I blog regularly about expressive code in C++ on Fluent C++ (http://fluentcpp.com)
     image: images/speakers/jonathan_boccara.jpg
     topics:
       - C++
-    github: JoBoccara 
-    twitter: JoBoccara 
-    eventil: jonathan-boccara 
+    github: JoBoccara
+    twitter: JoBoccara
+    eventil: jonathan-boccara
 
 agenda:
   - name: Friday, July 7
@@ -374,9 +374,9 @@ agenda:
         title: Coffee Break
       - start: '17:40'
         end: '18:10'
-        length: 
+        length:
         type: regular
-        name: Etiene Dalcol 
+        name: Etiene Dalcol
         title: TBA
         abstract:
         topics:
@@ -385,10 +385,10 @@ agenda:
           - Virtual Machine
       - start: '18:20'
         end: '19:00'
-        length: 
+        length:
         type: regular
         name: TBA
-        title: TBA 
+        title: TBA
         abstract: TBA
         topics:
 
@@ -402,7 +402,7 @@ agenda:
         title: Protobuf all the way down
         abstract: Across the stack at Improbable we have components written in ~5 different languages, and we rely heavily on Google's protocol buffers to tie them all together. In this talk we'll discuss what protocol buffers are, how we use them at Improbable, and some of the extensions we've built on top of protocol buffers to add validation, logging and how it forms the basis of our custom ORM layer.
         topics:
-          - Integration 
+          - Integration
           - Infrastructure
       - start: '9:40'
         end: '10:10'
@@ -431,13 +431,13 @@ agenda:
         abstract: The usage of Rust started as an experiment at Sentry but became a non negligible part of our infrastructure. This is lessons learned, what works and doesn't and what we think is going to happen in the future.
         topics:
           - Rust
-      - start: '12:00' 
+      - start: '12:00'
         end: '12:30'
         length: 30 min
         type: regular
         name: Victor Nicollet
         title: Creating and using your own programming language
-        abstract: In 2013, we decided to build our own programming language to fill a narrow but critical role in our technology stack. Four years later, this talk dives into our reasons for doing so, our experiences as a small team in running production code through a compiler that we were writing at the same time, and what it took to ensure the stability of our domain-specific language and the proficiency of its users. 
+        abstract: In 2013, we decided to build our own programming language to fill a narrow but critical role in our technology stack. Four years later, this talk dives into our reasons for doing so, our experiences as a small team in running production code through a compiler that we were writing at the same time, and what it took to ensure the stability of our domain-specific language and the proficiency of its users.
         topics:
           - Programming Language Design
       - start: '14:00'
@@ -451,13 +451,13 @@ agenda:
           - Clojure
       - start: '14:40'
         end: '15:10'
-        length: 
+        length:
         type: regular
         name: Piotr Szotkowski
         title: The Modern Prometheus
         abstract: 'Most non-scripting languages are faster than Ruby (Rust: tremendously so), but few (Crystal?) can match its optimisation for developer happiness and productivity. Let’s try to gauge Ruby’s chances when it comes to matching modern performance expectations: Are the changes in recent CRuby versions significant? Can JRuby bring enough JVM performance? And – to address the titular Frankenstein – how easily can we harness the power of Crystal, Rust, C or even assembly from within our Ruby applications?'
         topics:
-          - Ruby 
+          - Ruby
           - Crystal
           - Assembly
           - C
@@ -479,16 +479,16 @@ agenda:
         type: regular
         name: Anjana Sofia Vakil
         title: TBA
-        abstract: 
+        abstract:
         topics:
           - Python
           - JavaScript
-      - start: '17:40' 
+      - start: '17:40'
         end: '18:20'
         length: 40 min
         type: regular
-        name: Chris Seaton 
-        title: Polyglot From the Very Old to the Very New 
+        name: Chris Seaton
+        title: Polyglot From the Very Old to the Very New
         abstract: Writing programs in a high-level language such as Ruby, with extensions written in C, is probably the earliest form of polyglot. In GraalVM we're rethinking this from first principles and actually interpreting C extensions using the latest in virtual machine technology.
         topics:
           - Ruby
@@ -500,7 +500,7 @@ agenda:
         type: regular
         name: Maxime Chevalier-Boisvert
         title: TBA
-        abstract: 
+        abstract:
         topics:
           - Programming Language Design
           - Virtual Machine
@@ -508,14 +508,16 @@ agenda:
     slots:
       - start: '09:00'
         end: '09:30'
-        length: 30 min 
+        length: 30 min
         type: regular
         name: Hans Elias Bukholm Josephsen
-        title: TBA
-        abstract: TBA
+        title: Elixir FFI with Rust
+        abstract: Elixir is a functional language which runs on the Erlang VM. The unique design of the VM makes the language a great choice for writing applications which does networking and other forms of IO. Although Elixir excels in many areas, sometimes you need to do something that requires a lower-level language. In this talk we're going to discuss how Rust and the Rustler project can make interacting with native code both safer and easier for the programmer.
         topics:
           - Erlang
           - Elixir
+          - Rust
+          - Integration
       - start: '09:40'
         end: '10:10'
         length: 30 min
@@ -562,7 +564,7 @@ agenda:
           - Programming Language Design
           - JavaScript
           - Ruby
-          - R 
+          - R
           - LLVM
           - C/C++
           - Rust
@@ -577,8 +579,8 @@ agenda:
         topics:
           - C++
           - Programming Concepts
-      - start: 
-        end: 
+      - start:
+        end:
         title: Coffee Break
       - start: '17:40'
         end: '18:20'
@@ -625,7 +627,16 @@ workshops:
     requirments:
       - Please note that a computer will not be provided, so please bring your own laptop to the workshop
       - the latest version of Node.js Installed - you can download the installer over at Nodejs.org. If you aren't sure if you have node installed, open a terminal window and type `node -v`, compare that against the latest version at http://nodejs.org
-      - A terminal / command line application. For Windows I recommend [cmder](http://cmder.net/), though the built in one will work just fine. For OSX built in Terminal, [iTerm2](https://www.iterm2.com/) or [Hyper.app](https://hyperterm.now.sh/) will work as well. 
+      - A terminal / command line application. For Windows I recommend [cmder](http://cmder.net/), though the built in one will work just fine. For OSX built in Terminal, [iTerm2](https://www.iterm2.com/) or [Hyper.app](https://hyperterm.now.sh/) will work as well.
       - 'A text editor. You may use any editor but here are some good ones: Sublime Text with [Babel-Sublime](https://github.com/babel/babel-sublime) syntax highlighter installed or [Atom](https://atom.io/)'
-    bio: >
+    bio: |
       Wes Bos is a full stack developer and teacher from Hamilton, Canada. With a knack for breaking down technical concepts and converting them into fun, digestable bits, Wes creates some of the best online courses related to web development. He is the author or [React For Beginners](http://ReactforBeginners.com), [ES6 for Everyone](https://ES6.io), [What the Flexbox?!][http://flexbox.io] and [many other courses](http://wesbos.com/courses). You can catch Wes posting 🔥 Hot Tips on his [twitter](https://twitter.com/wesbos) where he is most active.
+  - title: Applied Haskell
+    name: Michael Snoyman
+    link: http://www.snoyman.com
+    requirments:
+      - Please note that a computer will not be provided, so please bring your own laptop to the workshop
+    description: |
+      In this training session, we will cover modern [Haskell](https://www.haskell.org/) programming best practices, with an emphasis on creating real world, production-ready applications. This will include program structure, recommended libraries, and tooling configuration. The techniques will be relevant to most programming domains, including network programming, concurrent applications, and data science. Familiarity with Haskell syntax and basic programming ability is assumed, and ample Q&A sections will be available.
+
+      The course will roughly follow [the FP Complete Haskell Syllabus](https://www.fpcomplete.com/haskell-syllabus). Based on user feedback in advance of the session, the planned topics will be updated to accommodate audience interest.
