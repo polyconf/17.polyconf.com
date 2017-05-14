@@ -3,3 +3,6 @@ stylesheets:
   - 'https://unpkg.com/bootstrap@4.0.0-alpha.6/dist/css/bootstrap.css'
 javascripts:
   - 'https://unpkg.com/particles.js@2.0.0/particles.js'
+deploy:
+  server: nu02
+  path: /srv/www/17.polyconf.com
