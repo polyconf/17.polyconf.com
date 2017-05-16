@@ -506,8 +506,8 @@ agenda:
           - Virtual Machine
   - name: Sunday, July 9
     slots:
-      - start: 0900
-        end: 0930 
+      - start: '09:00'
+        end: '09:30'
         length: 30 min 
         type: regular
         name: Hans Elias Bukholm Josephsen
@@ -516,8 +516,8 @@ agenda:
         topics:
           - Erlang
           - Elixir
-      - start: 0940
-        end: 1010
+      - start: '09:40'
+        end: '10:10'
         length: 30 min
         type: regular
         name: Makoto Inoue
@@ -527,8 +527,8 @@ agenda:
           - Solidity
           - Blockchain
           - Ethereum
-      - start: 1020
-        end: 1050
+      - start: '10:20'
+        end: '10:50'
         length: 30 min
         type: regular
         name: Tobias Pfeiffer
@@ -537,8 +537,8 @@ agenda:
         topics:
           - Best Practices
           - Benchmarking
-      - start: 1120
-        end: 1150
+      - start: '11:20'
+        end: '11:50'
         length: 30 min
         type: regular
         name: Terence Pae
@@ -550,8 +550,8 @@ agenda:
           - React
           - Swift
           - React Native
-      - start: 1200
-        end: 1230
+      - start: '12:00'
+        end: '12:30'
         length: 30 min
         type: regular
         name: Thomas Wuerthinger
@@ -567,8 +567,8 @@ agenda:
           - C/C++
           - Rust
           - Go
-      - start: 1400
-        end: 1430
+      - start: '14:00'
+        end: '14:30'
         length: 30 min
         type: regular
         name: Jonathan Boccara
@@ -580,8 +580,8 @@ agenda:
       - start: 
         end: 
         title: Coffee Break
-      - start: 1740
-        end: 1820
+      - start: '17:40'
+        end: '18:20'
         length: 40 min
         type: regular
         name: Safia Abdalla
@@ -589,8 +589,8 @@ agenda:
         abstract: TBA
         topics:
           - Python
-      - start: 1830
-        end: 1910
+      - start: '18:30'
+        end: '19:10'
         length: 40 min
         type: regular
         name: Jack Moffitt
