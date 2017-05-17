@@ -102,6 +102,10 @@
             padding: 5px 30px;
             color: #888;
 
+            @media (max-width: 1280px) {
+              padding: 5px 18px;
+            }
+
             &:hover {
               color: $blue;
             }
