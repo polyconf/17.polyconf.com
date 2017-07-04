@@ -13,7 +13,7 @@
         <li class="row mb-5">
           <div class="author col-lg-3 text-center">
             <img src="images/speakers/{{ workshop.name | lower | replace(' ', '_')}}.jpg" alt="" class="img-fluid m-auto avatar">
-            <a href="#" class="btn-cta btn-disabled d-block w-100 text-center mt-2 mb-4">Register (soon)</a>
+            <a href="https://eventil.com/events/polyconf-17/register" class="btn-cta d-block w-100 text-center mt-2 mb-4">Register</a>
           </div>
           <div class="content col-lg-6">
             <header>
@@ -31,7 +31,7 @@
             <ul class="details list-unstyled p-0 m-0">
               <li class="mb-1 d-flex">
                 <img src="images/checked.svg" alt="" class="img-fluid mr-2">
-                <p class="mb-1">Workshops Ticket Price: <strong>TBA €</strong></p>
+                <p class="mb-1">Workshops Ticket Price: <strong>€ {{ workshop.price }}</strong> (incl. VAT)</p>
               </li>
               <li class="mb-1 d-flex">
                 <img src="images/checked.svg" alt="" class="img-fluid mr-2">

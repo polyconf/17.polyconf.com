@@ -236,11 +236,11 @@ speakers:
     github: chastell
     twitter: chastell
     eventil: chastell
-  - name: Thomas Wuerthinger
+  - name: Gilles Duboscq 
     title: One VM to Rule Them All
-    tagline: Research Director
+    tagline: Seniro Researcher 
     company: at Oracle Labs Switzerland.
-    bio:
+    bio: Gilles Duboscq is a senior researcher at Oracle Labs Switzerland working on the Graal project. His research interest include virtual machine, compilers and speculative optimizations. He received his PhD degree from the Johannes Kepler University in Linz for his thesis about speculative optimizations and compiler intermediate representations.
     image: images/speakers/thomas_wuerthinger.jpg
     topics:
       - Java
@@ -295,18 +295,42 @@ speakers:
     github: maximecb
     twitter: Love2Code
     eventil: maximecb
-  - name: Jonathan Boccara 
+  - name: Jonathan Boccara
     title: The spectrum of polymorphism
     abstract: Even if polymorphism is one of the first concepts we learn as developers, it is actually a very profound notion in software construction. In this presentation taking C++ as an example, you’ll see that polymorphism can itself take a wide variety of shapes and in particular different moments of resolution. And more importantly, how to pick the one that is most adapted to your design.
-    tagline: Software Engineer 
+    tagline: Software Engineer
     company: Murex
-    bio: I've been a C++ software developer for 6 years, working for Murex which is a major software editor in the finance industry. My focus is on studying how to write expressive code, and how to make existing code more expressive. I sometimes take inspiration from Functional Programming with Haskell as a second language. And I blog regularly about expressive code in C++ on Fluent C++ (http://fluentcpp.com) 
+    bio: I've been a C++ software developer for 6 years, working for Murex which is a major software editor in the finance industry. My focus is on studying how to write expressive code, and how to make existing code more expressive. I sometimes take inspiration from Functional Programming with Haskell as a second language. And I blog regularly about expressive code in C++ on Fluent C++ (http://fluentcpp.com)
     image: images/speakers/jonathan_boccara.jpg
     topics:
       - C++
-    github: JoBoccara 
-    twitter: JoBoccara 
-    eventil: jonathan-boccara 
+    github: JoBoccara
+    twitter: JoBoccara
+    eventil: jonathan-boccara
+  - name: Don Goodman-Wilson 
+    tagline: Head of Developer Relations
+    company: Sqreen 
+    bio: Don is a philosopher-engineer who advocates for platforms and developers, and has a passion for security. He has previously worked with chatbots, streaming media, embedded hardware, the model railroading industry, and academic philosophy. He enjoys statically typed languages and sailing, and lives with his wife and daughter in Paris. 
+    image: images/speakers/don_goodman-wilson.jpg
+    topics:
+      - Python
+      - C/C++
+      - Ruby
+    github: DEGoodmanWilson 
+    twitter: DEGoodmanWilson 
+    eventil: degoodmanwilson 
+    website: https://don.goodman-wilson.com/
+  - name: Myles Borins 
+    tagline: Developer Advocate 
+    company: Google 
+    bio: Artist, Musician, Developer, and maker. @nodejs CTC Developer Advocate for @GoogleCloudPlatform 
+    image: images/speakers/myles_borins.jpg
+    topics:
+      - JavaScript 
+    github: MylesBorins 
+    twitter: MylesBorins 
+    eventil: MylesBorins 
+    website: https://mylesborins.com/ 
 
 agenda:
   - name: Friday, July 7
@@ -327,25 +351,21 @@ agenda:
         end: '15:10'
         length: 30 min
         type: regular
-        name: Benoit Chesneau
-        title: Building a database from scratch in Erlang
-        abstract: During the last months I've written from scratch Barrel is a modern document-oriented database with master-master replication targeting micro-services with a RESTful API written in Erlang. This talk will describe the different challenges we faced in writing a database, from binding C code in Erlang, to write a complete SQL Engine. This talk will also describe the different patterns used for Reads and Writes concurrency but also continuous automated indexation of the documents.
+        name: Armin Ronacher
+        title: Rust at Sentry
+        abstract: The usage of Rust started as an experiment at Sentry but became a non negligible part of our infrastructure. This is lessons learned, what works and doesn't and what we think is going to happen in the future.
         topics:
-          - Erlang
-          - Database
-          - SQL
-          - API
+          - Rust
       - start: '15:20'
         end: '15:50'
         length: 30 min
         type: regular
-        name: Wojtek Erbetowski
-        title: Going serverless
-        abstract: Serverless might change the industry in a big way. Miss it out and you soon might be out of business, as your competition will save huge infrastructure money, developers time and will scale better than you. Presentation is an introduction, but with hard technical insights on how the serverless is really different what classic and microservices design.
+        name: TBA
+        title: Protobuffer, templating and code generation at the heart of our polyglot development strategy
+        abstract: "Google's Protobuffer is more than just a data interchange format: along with the use of templating and a code generation tool, it can be the cornerstone of a company's polyglot software development strategy. In this presentation we will see how we are implementing it at Vente-Privee.com and the benefits we are already receiving."
         topics:
-          - Serverless
-          - Architecture
-          - Infrastructure
+          - Protobuffer
+          - Integration
       - start: '16:00'
         end: '16:30'
         length: 30 min
@@ -360,38 +380,36 @@ agenda:
       - start: '16:40'
         end: '17:10'
         length: 30 min
-        name: Imad Elyafi
-        type: regular
-        title: Migrating Pinterest profiles to React
-        abstract: We all have been in situation when we were in one platform and had to move to another. While it’s relatively easy to build a new web app in React, migrating a service that’s constantly changing and used by millions of people is a much more complicated challenge. It’s like changing the engines of an airplane while mid-flight. The talk is about techniques we tried and challenges we faced while migrating to React at Pinterest.
+        name: Alexander Thiemann
+        title: Reflecting on 5 years of Haskell in Production
+        abstract: I have been using Haskell in production at Checkpad MED, TramCloud and other many projects for more than 5 years and would like to discuss the advantages and challenges discovered during this time. We will look at first principles on structuring, building and testing Haskell applications at scale, discuss interfacing and deployment of microservices, performance and practical considerations like debugging, tooling support and IDEs.
         topics:
-          - React
-          - Architecture
-          - Infrastructure
-          - Best Practices
+          - Haskell
       - start: '17:10'
         end: '17:40'
         title: Coffee Break
       - start: '17:40'
         end: '18:10'
-        length: 
+        length: 30 min
         type: regular
-        name: Etiene Dalcol 
-        title: TBA
-        abstract:
+        name: Wojtek Erbetowski
+        title: Going serverless
+        abstract: Serverless might change the industry in a big way. Miss it out and you soon might be out of business, as your competition will save huge infrastructure money, developers time and will scale better than you. Presentation is an introduction, but with hard technical insights on how the serverless is really different what classic and microservices design.
+        topics:
+          - Serverless
+          - Architecture
+          - Infrastructure
+      - start: '18:20'
+        end: '19:00'
+        length:
+        type: regular
+        name: Etiene Dalcol
+        title: "The price of speed: Lua or LuaJIT?"
+        abstract: "Lua has many different implementations and derived languages (among others, these include LuaJIT, TypedLua, Starlight, Ravi, Terra and Moonscript). In this talk we'll compare standard Lua with the popular LuaJIT, known especially for its speed. The topics covered include: an introduction to Lua and LuaJIT; compatibility and code styling differences; use cases; and issues you should be aware of."
         topics:
           - Lua
           - LuaJIT
           - Virtual Machine
-      - start: '18:20'
-        end: '19:00'
-        length: 
-        type: regular
-        name: TBA
-        title: TBA 
-        abstract: TBA
-        topics:
-
   - name: Saturday, July 8
     slots:
       - start: '9:00'
@@ -402,7 +420,7 @@ agenda:
         title: Protobuf all the way down
         abstract: Across the stack at Improbable we have components written in ~5 different languages, and we rely heavily on Google's protocol buffers to tie them all together. In this talk we'll discuss what protocol buffers are, how we use them at Improbable, and some of the extensions we've built on top of protocol buffers to add validation, logging and how it forms the basis of our custom ORM layer.
         topics:
-          - Integration 
+          - Integration
           - Infrastructure
       - start: '9:40'
         end: '10:10'
@@ -417,29 +435,43 @@ agenda:
         end: '10:50'
         length: 30 min
         type: regular
-        name: Alexander Thiemann
-        title: Reflecting on 5 years of Haskell in Production
-        abstract: I have been using Haskell in production at Checkpad MED, TramCloud and other many projects for more than 5 years and would like to discuss the advantages and challenges discovered during this time. We will look at first principles on structuring, building and testing Haskell applications at scale, discuss interfacing and deployment of microservices, performance and practical considerations like debugging, tooling support and IDEs.
+        name: Imad Elyafi
+        title: Migrating Pinterest profiles to React
+        abstract: We all have been in situation when we were in one platform and had to move to another. While it’s relatively easy to build a new web app in React, migrating a service that’s constantly changing and used by millions of people is a much more complicated challenge. It’s like changing the engines of an airplane while mid-flight. The talk is about techniques we tried and challenges we faced while migrating to React at Pinterest.
         topics:
-          - Haskell
+          - React
+          - Architecture
+          - Infrastructure
+          - Best Practices
       - start: '11:20'
         end: '11:50'
         length: 30 min
         type: regular
-        name: Armin Ronacher
-        title: Rust at Sentry
-        abstract: The usage of Rust started as an experiment at Sentry but became a non negligible part of our infrastructure. This is lessons learned, what works and doesn't and what we think is going to happen in the future.
+        name: Benoit Chesneau
+        title: Building a database from scratch in Erlang
+        abstract: During the last months I've written from scratch Barrel is a modern document-oriented database with master-master replication targeting micro-services with a RESTful API written in Erlang. This talk will describe the different challenges we faced in writing a database, from binding C code in Erlang, to write a complete SQL Engine. This talk will also describe the different patterns used for Reads and Writes concurrency but also continuous automated indexation of the documents.
         topics:
-          - Rust
-      - start: '12:00' 
+          - Erlang
+          - Database
+          - SQL
+          - API
+      - start: '12:00'
         end: '12:30'
         length: 30 min
         type: regular
         name: Victor Nicollet
         title: Creating and using your own programming language
-        abstract: In 2013, we decided to build our own programming language to fill a narrow but critical role in our technology stack. Four years later, this talk dives into our reasons for doing so, our experiences as a small team in running production code through a compiler that we were writing at the same time, and what it took to ensure the stability of our domain-specific language and the proficiency of its users. 
+        abstract: In 2013, we decided to build our own programming language to fill a narrow but critical role in our technology stack. Four years later, this talk dives into our reasons for doing so, our experiences as a small team in running production code through a compiler that we were writing at the same time, and what it took to ensure the stability of our domain-specific language and the proficiency of its users.
         topics:
           - Programming Language Design
+      - start: '12:30'
+        end: '14:00'
+        type: break 
+        title: Lunch 
+      - start: '13:00'
+        end: '13:45'
+        type: break 
+        title: Omnimax Projection 
       - start: '14:00'
         end: '14:30'
         length: 30 min
@@ -451,17 +483,30 @@ agenda:
           - Clojure
       - start: '14:40'
         end: '15:10'
-        length: 
+        length: 30 min
         type: regular
         name: Piotr Szotkowski
         title: The Modern Prometheus
         abstract: 'Most non-scripting languages are faster than Ruby (Rust: tremendously so), but few (Crystal?) can match its optimisation for developer happiness and productivity. Let’s try to gauge Ruby’s chances when it comes to matching modern performance expectations: Are the changes in recent CRuby versions significant? Can JRuby bring enough JVM performance? And – to address the titular Frankenstein – how easily can we harness the power of Crystal, Rust, C or even assembly from within our Ruby applications?'
         topics:
-          - Ruby 
+          - Ruby
           - Crystal
           - Assembly
           - C
           - JVM
+      - start: '15:20'
+        end: '15:30'
+        length: 10 min
+        name: Romain Dorgueil
+        title: Simple ETL in Python 3 with Bonobo
+        abstract:
+        topics:
+          - Python
+          - ETL
+      - start: '15:30'
+        end: '15:50'
+        type: lightning
+        title: Lightning Talks Session
       - start: '16:00'
         end: '16:30'
         length: 30 min
@@ -476,19 +521,22 @@ agenda:
       - start: '16:40'
         end: '17:10'
         length: 30 min
-        type: regular
-        name: Anjana Sofia Vakil
-        title: TBA
-        abstract: 
+        name: Myles Borins 
+        title: Open Source Governance Models
+        abstract:
         topics:
-          - Python
-          - JavaScript
-      - start: '17:40' 
+          - OSS
+          - Node 
+      - start: '17:10'
+        end: '17:40'
+        type: break 
+        title: Coffee Break 
+      - start: '17:40'
         end: '18:20'
         length: 40 min
         type: regular
-        name: Chris Seaton 
-        title: Polyglot From the Very Old to the Very New 
+        name: Chris Seaton
+        title: Polyglot From the Very Old to the Very New
         abstract: Writing programs in a high-level language such as Ruby, with extensions written in C, is probably the earliest form of polyglot. In GraalVM we're rethinking this from first principles and actually interpreting C extensions using the latest in virtual machine technology.
         topics:
           - Ruby
@@ -499,8 +547,8 @@ agenda:
         length: 40 min
         type: regular
         name: Maxime Chevalier-Boisvert
-        title: TBA
-        abstract: 
+        title: ZetaVM, A Platform to Enable Programming Language Innovation 
+        abstract: This talk will introduce ZetaVM, a new platform designed to enable anyone to create their own programming language. ZetaVM is designed primarily for enthusiasts rather than for industry, and takes a fresh look at the foundations on which modern VMs are built. Planned features include a simple text-based bytecode format, the ability to introspect running code and generate new bytecode at run-time, a functional/compositional approach to sound and graphics, as well as GPU-based acceleration using an SPMD programming model.
         topics:
           - Programming Language Design
           - Virtual Machine
@@ -508,14 +556,16 @@ agenda:
     slots:
       - start: '09:00'
         end: '09:30'
-        length: 30 min 
+        length: 30 min
         type: regular
         name: Hans Elias Bukholm Josephsen
-        title: TBA
-        abstract: TBA
+        title: Elixir FFI with Rust
+        abstract: Elixir is a functional language which runs on the Erlang VM. The unique design of the VM makes the language a great choice for writing applications which does networking and other forms of IO. Although Elixir excels in many areas, sometimes you need to do something that requires a lower-level language. In this talk we're going to discuss how Rust and the Rustler project can make interacting with native code both safer and easier for the programmer.
         topics:
           - Erlang
           - Elixir
+          - Rust
+          - Integration
       - start: '09:40'
         end: '10:10'
         length: 30 min
@@ -537,6 +587,11 @@ agenda:
         topics:
           - Best Practices
           - Benchmarking
+      - start: '10:50'
+        end: '11:20'
+        length: 30 min
+        type: break 
+        title: Coffee Break
       - start: '11:20'
         end: '11:50'
         length: 30 min
@@ -554,7 +609,7 @@ agenda:
         end: '12:30'
         length: 30 min
         type: regular
-        name: Thomas Wuerthinger
+        name: Gilles Duboscq 
         title: One VM to Rule Them All
         abstract: Graal is a new just-in-time compiler for the Java Virtual Machine with support for the Truffle polyglot framework. Integrated language runtimes include JavaScript, Ruby, and R. Additionally, it supports LLVM-based languages such as C, C++, Go, and Rust. Graal enables seamless language interoperability while also providing world-class performance for each individual language. A demo will show how JavaScript, Java, Ruby, R, and C can work together in a single web application running in one VM!
         topics:
@@ -562,11 +617,15 @@ agenda:
           - Programming Language Design
           - JavaScript
           - Ruby
-          - R 
+          - R
           - LLVM
           - C/C++
           - Rust
           - Go
+      - start: '12:30'
+        end: '14:00'
+        type: break
+        title: Lunch
       - start: '14:00'
         end: '14:30'
         length: 30 min
@@ -577,55 +636,54 @@ agenda:
         topics:
           - C++
           - Programming Concepts
-      - start: 
-        end: 
-        title: Coffee Break
-      - start: '17:40'
-        end: '18:20'
-        length: 40 min
+      - start: '14:40'
+        end: '15:10'
+        length: 30 min
         type: regular
-        name: Safia Abdalla
-        title: TBA
-        abstract: TBA
+        name: Don Goodman-Wilson 
+        title: "Tearing Down Walls: Web APIs for Desktop Applications"
+        abstract: Very few desktop apps expose APIs. In part, the use cases are just too obscure to bother with. But in part, building APIs requires us to bridge the web and the desktop, and that's not very easy. But it can be done. And you can do it too. One of my first jobs at Screenhero was to build an API that allowed Slack to control our desktop application. Journey with me through Screenhero’s API and see how we blended Ruby, Erlang, C, JavaScript, and sheer naïveté, all so you could type `/hero` into Slack and watch magic happen. 
+        topics:
+          - Ruby
+          - JavaScript
+          - Erlang
+          - C
+      - start: '15:20'
+        end: '15:50'
+        type: break 
+        title: Lightning Talk Session 
+      - start: '15:50'
+        end: '16:20'
+        type: break 
+        title: Coffee Break 
+      - start: '16:30'
+        end: '17:10'
+        type: regular
+        name: Anjana Sofia Vakil
+        title: Programming across paradigms 
+        abstract: The programming paradigm we work in shapes every aspect of how we craft our code, providing a model of what a program is, and what it can and should be. In this talk, we’ll explore the connections between the programs we write, the languages we work in, and the paradigms we use, and try to get some historical and philosophical perspective on the familiar paradigms of imperative, declarative, object-oriented, and functional programming, focusing on the points where they intersect and collide. We’ll discover the valuable lessons different paradigms can teach us, and find motivation to stop arguing with our fellow coders about which is superior, and instead encourage each other - as individuals and a community - to pursue poly-paradigm programming. 
         topics:
           - Python
-      - start: '18:30'
-        end: '19:10'
+          - JavaScript
+      - start: '17:20'
+        end: '18:00'
         length: 40 min
         type: regular
         name: Jack Moffitt
-        title: TBA
-        abstract: TBA
+        title: What I Talk About When I Talk About Running on the Web 
+        abstract: Web engines have evolved into sophisticated virtual machines. Millions of developers build for the web platform, and the resulting code runs on everything. Servo aims to be far more than a web browser engine by allowing developers to embed it in their own applications and by building a runtime based on web technology. In this talk, Jack will cover motivations, use cases, and potential new programming models. 
         topics:
           - Rust
           - Servo
 
 workshops:
-  - title: An Intro to React Workshop
-    name: Wes Bos
-    link: http://wesbos.com/
-    description: |
-      This is a 1 day, 6-8 hour workshop aimed at understanding the fundamentals of React. Throughout the day we will work to incrementally build an application touching all every major point of React:
-
-      * Creating Components and writing HTML with JSX
-      * Routing with React Router
-      * Understanding State and holding data
-      * Passing data between components with with Props
-      * Fetching data from an Ajax endpoint
-      * Persisting data with LocalStorage
-      * Working with Events in React
-      * Working with Forms, retrieving data from DOM inputs
-      * Stateless Functional Components
-      * React Deployment
-
-
-      Together we will build [React.Beer](http://React.beer), an interactive Beer explorer single page application. Along the way we will learn each fundamental concept, take time to implement it in our application and understand both the _Whys_ and _hows_ of the way React works.
-
-      Students are expected to have Beginner to intermediate JavaScript skills — you should know how functions, variables, arguments and all the basics of JavaScript work.
+  - title: Applied Haskell
+    name: Michael Snoyman
+    link: http://www.snoyman.com
+    price: 750
     requirments:
       - Please note that a computer will not be provided, so please bring your own laptop to the workshop
-      - the latest version of Node.js Installed - you can download the installer over at Nodejs.org. If you aren't sure if you have node installed, open a terminal window and type `node -v`, compare that against the latest version at http://nodejs.org
-      - A terminal / command line application. For Windows I recommend [cmder](http://cmder.net/), though the built in one will work just fine. For OSX built in Terminal, [iTerm2](https://www.iterm2.com/) or [Hyper.app](https://hyperterm.now.sh/) will work as well. 
-      - 'A text editor. You may use any editor but here are some good ones: Sublime Text with [Babel-Sublime](https://github.com/babel/babel-sublime) syntax highlighter installed or [Atom](https://atom.io/)'
-    bio: >
-      Wes Bos is a full stack developer and teacher from Hamilton, Canada. With a knack for breaking down technical concepts and converting them into fun, digestable bits, Wes creates some of the best online courses related to web development. He is the author or [React For Beginners](http://ReactforBeginners.com), [ES6 for Everyone](https://ES6.io), [What the Flexbox?!][http://flexbox.io] and [many other courses](http://wesbos.com/courses). You can catch Wes posting 🔥 Hot Tips on his [twitter](https://twitter.com/wesbos) where he is most active.
+    description: |
+      In this training session, we will cover modern [Haskell](https://www.haskell.org/) programming best practices, with an emphasis on creating real world, production-ready applications. This will include program structure, recommended libraries, and tooling configuration. The techniques will be relevant to most programming domains, including network programming, concurrent applications, and data science. Familiarity with Haskell syntax and basic programming ability is assumed, and ample Q&A sections will be available.
+
+      The course will roughly follow [the FP Complete Haskell Syllabus](https://www.fpcomplete.com/haskell-syllabus). Based on user feedback in advance of the session, the planned topics will be updated to accommodate audience interest.
