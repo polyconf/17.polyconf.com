@@ -1,0 +1,52 @@
+#jobOffers {
+  position: relative;
+  padding: 100px 0;
+  background: #f8f8f8;
+
+  .offer {
+    padding: 28px 0 24px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+    .time {
+      color: $green;
+
+      .city {
+        font-weight: 400;
+      }
+
+      .country {
+        color: #888;
+        font-weight: 300;
+        font-size: .8em;
+      }
+    }
+
+    header {
+
+      .header-content {
+
+        .title {
+          font-weight: 400;
+          transition: .2s ease-in;
+
+          a {
+            color: #222;
+            text-decoration: none;
+            transition: .2s ease-in;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+      }
+
+      .header-thumbnail {
+
+        img {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}

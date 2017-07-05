@@ -4,6 +4,10 @@
   background: #fff;
 
   img {
-    max-width: 90%;
+    max-height: 80px;
+
+    &.main-logo {
+      max-height: 110px;
+    }
   }
 }
