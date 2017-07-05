@@ -75,40 +75,6 @@ Date.prototype.countdown = function (endTime) {
   setTimeout(loop, 1000);
 }());
 
-// var cfpDate = new Date(2017, 2, 20, 1);
-// var now  = new Date;
-// var btnText = document.getElementById('cfp-remaining');
-
-// btnText.innerHTML = Math.round((cfpDate - now) / (1000 * 60 * 60 * 24)) + ' days';
-
-// var agenda = document.getElementById('agenda');
-// var lesson = agenda.querySelectorAll('.lesson');
-// var lessonGroup = [].slice.call(lesson);
-//
-// lessonGroup.forEach(function(item){
-//   item.addEventListener('mouseover', function(){
-//     this.classList.add('hover');
-//   });
-//
-//   item.addEventListener('mouseout', function(){
-//     this.classList.remove('hover');
-//   });
-//
-//   var collapse = item.querySelector('.collapse-content');
-//   var collapseHeight = collapse.clientHeight + 'px';
-//   collapse.style.height = 0 + 'px';
-//
-//   item.addEventListener('click', function() {
-//     collapse.classList.toggle('hidden');
-//
-//     if(collapse.classList.contains('hidden')) {
-//       collapse.style.height = 0 + 'px'
-//     }else {
-//       collapse.style.height = collapseHeight;
-//     }
-//   });
-// });
-
 
 var alert = document.getElementById('alert');
 var closeAlert = document.getElementsByClassName('close')[0];
@@ -117,7 +83,32 @@ if(localStorage.alert !== "false") {
   alert.classList.remove('d-none');
 }
 
-closeAlert.addEventListener('click', function(){
-  localStorage.setItem("alert", "false");
-  alert.classList.add('d-none');
-});
+
+if(typeof closeAlert !=='undefined') {
+
+  closeAlert.addEventListener('click', function(){
+    localStorage.setItem("alert", "false");
+    alert.classList.add('d-none');
+  });
+}
+
+// if HTML DOM Element that contains the map is found...
+if (document.getElementById('map-canvas')){
+
+  var myLatlng = new google.maps.LatLng(48.894560,2.388667);
+
+  var mapOptions = {
+    zoom: 14,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map
+  });
+
+}
