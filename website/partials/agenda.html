@@ -18,21 +18,21 @@
                 {% for slot in day.slots %}
                 <li class="lesson">
                   <div class="row">
-                    <div class="col-md-2">
-                      <h5 class="time text-uppercase">
+                    <div class="col-lg-2 col-md-3">
+                      <h5 class="time  mb-3 mb-sm-2 text-uppercase">
                         <span class="start">{{ slot.start }}</span> - 
                         <span class="end">{{ slot.end }}</span> 
                         <br>
                         <span class="minutes">{{ slot.length }}</span>
                       </h5>
                     </div>
-                    <div class="col-md-10">
-                      <header class="d-block w-100">
-                        <div class="header-content float-left">
+                    <div class="col-lg-10 col-md-9">
+                      <header class="d-flex">
+                        <div class="header-content mr-3">
                           <h5 class="title mt-0 mb-2 text-uppercase">{{ slot.title }}</h5>
                           <p class="name lead mt-0 mb-0 d-block">with <strong>{{ slot.name }}</strong></p>
                         </div>
-                        <div class="header-thumbnail float-right d-flex align-items-center">
+                        <div class="header-thumbnail ml-auto">
                           <img src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') | replace('\'', '')}}.jpg" alt="">
                         </div>
                       </header>
