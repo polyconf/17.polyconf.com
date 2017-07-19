@@ -241,12 +241,12 @@ speakers:
     tagline: Seniro Researcher 
     company: at Oracle Labs Switzerland.
     bio: Gilles Duboscq is a senior researcher at Oracle Labs Switzerland working on the Graal project. His research interest include virtual machine, compilers and speculative optimizations. He received his PhD degree from the Johannes Kepler University in Linz for his thesis about speculative optimizations and compiler intermediate representations.
-    image: images/speakers/thomas_wuerthinger.jpg
+    image: images/speakers/gilles_duboscq.jpg
     topics:
       - Java
-    github: thomaswue
+    github: WoodenGil 
     twitter: thomaswue
-    eventil: thomaswue
+    eventil: gilles-duboscq 
   - name: Steven Goodwin
     title: Ada 99 - Rewriting the very first computer program
     tagline:
@@ -331,10 +331,43 @@ speakers:
     twitter: MylesBorins 
     eventil: MylesBorins 
     website: https://mylesborins.com/ 
+  - name: Julien Hayotte 
+    tagline: Software Engineer 
+    company: vente-privée 
+    bio: 
+    image: images/speakers/julien_hayotte.jpg
+    topics:
+      - Go 
+      - C# 
+    github: jhayotte 
+    twitter: JHayotte
+  - name: Valerio Gheri 
+    tagline: Software Engineer 
+    company: vente-privée 
+    bio: 
+    image: images/speakers/valerio_gheri.jpg
+    topics:
+      - Go 
+      - JavaScript
+      - C# 
+    github: vgheri 
+    twitter: s0nica
+
 
 agenda:
   - name: Friday, July 7
     slots:
+      - start: "13:00"
+        end: "13:40"
+        length: 40 min
+        name: PolyConf Team
+        title: Registration
+      - start: "13:40"
+        end: "14:00"
+        length: 15 min
+        type: regular
+        name: Zaiste
+        title: Opening Word
       - start: "14:00"
         end: "14:30"
         length: 30 min
@@ -360,7 +393,7 @@ agenda:
         end: '15:50'
         length: 30 min
         type: regular
-        name: TBA
+        name: Julien Hayotte, Valerio Gheri 
         title: Protobuffer, templating and code generation at the heart of our polyglot development strategy
         abstract: "Google's Protobuffer is more than just a data interchange format: along with the use of templating and a code generation tool, it can be the cornerstone of a company's polyglot software development strategy. In this presentation we will see how we are implementing it at Vente-Privee.com and the benefits we are already receiving."
         topics:
@@ -687,3 +720,15 @@ workshops:
       In this training session, we will cover modern [Haskell](https://www.haskell.org/) programming best practices, with an emphasis on creating real world, production-ready applications. This will include program structure, recommended libraries, and tooling configuration. The techniques will be relevant to most programming domains, including network programming, concurrent applications, and data science. Familiarity with Haskell syntax and basic programming ability is assumed, and ample Q&A sections will be available.
 
       The course will roughly follow [the FP Complete Haskell Syllabus](https://www.fpcomplete.com/haskell-syllabus). Based on user feedback in advance of the session, the planned topics will be updated to accommodate audience interest.
+
+jobs:
+  - title: Back-end Engineer at Trainline
+    logo: images/sponsors/trainline_logo.png
+    link: https://jobs.lever.co/thetrainline/9743f1ec-253f-46ec-a144-189158af3639
+    city: Paris
+    country: France
+  - title: Senior Frontend Engineer at Trainline
+    logo: images/sponsors/trainline_logo.png
+    link: https://jobs.lever.co/thetrainline/9743f1ec-253f-46ec-a144-189158af3639 
+    city: Paris
+    country: France

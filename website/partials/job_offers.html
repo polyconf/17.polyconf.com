@@ -1,78 +1,42 @@
-<section id="jobOffers">
-    <div class="container">
+<section id="jobs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 preamble dark">
         <div class="row">
-            <div class="col-md-10 preamble dark">
-                <div class="row">
-                    <div class="col-md-12"><h1 class="mt-0 mb-0 title">Job Offers</h1></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <ul class="list-unstyled mb-0 w-100">
-                    <li class="offer">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3">
-                                <h5 class="time  mb-3 mb-sm-2 text-uppercase">
-                                    <span class="city">Kraków</span>
-                                    <br>
-                                    <span class="country">Poland</span>
-                                </h5>
-                            </div>
-                            <div class="col-lg-10 col-md-9">
-                                <header class="d-flex">
-                                    <div class="header-content mr-3">
-                                        <h5 class="title mt-0 mb-2 text-uppercase"><a href="#">Front End Developer</a></h5>
-                                    </div>
-                                    <div class="header-thumbnail ml-auto">
-                                        <img src="https://www.primarywebsitedesign.com/wp-content/uploads/2015/01/code-pen-logo.png" alt="" class="img-fluid">
-                                    </div>
-                                </header>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="offer">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3">
-                                <h5 class="time  mb-3 mb-sm-2 text-uppercase">
-                                    <span class="city">Warszawa</span>
-                                    <br>
-                                    <span class="country">Poland</span>
-                                </h5>
-                            </div>
-                            <div class="col-lg-10 col-md-9">
-                                <header class="d-flex">
-                                    <div class="header-content mr-3">
-                                        <h5 class="title mt-0 mb-2 text-uppercase"><a href="#">React Developer</a></h5>
-                                    </div>
-                                    <div class="header-thumbnail ml-auto">
-                                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/google-logo-icon-PNG-Transparent-Background.png" alt="" class="img-fluid">
-                                    </div>
-                                </header>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="offer">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3">
-                                <h5 class="time  mb-3 mb-sm-2 text-uppercase">
-                                    <span class="city">Berlin</span>
-                                    <br>
-                                    <span class="country">Germany</span>
-                                </h5>
-                            </div>
-                            <div class="col-lg-10 col-md-9">
-                                <header class="d-flex">
-                                    <div class="header-content mr-3">
-                                        <h5 class="title mt-0 mb-2 text-uppercase"><a href="#">JavaScript Developer with Angular 2.0</a></h5>
-                                    </div>
-                                    <div class="header-thumbnail ml-auto">
-                                        <img src="https://tctechcrunch2011.files.wordpress.com/2014/06/dropbox_topic.png?fit=1%2C1" alt="" class="img-fluid">
-                                    </div>
-                                </header>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+          <div class="col-md-12">
+            <h1 class="mt-0 mb-0 title">Jobs</h1>
+          </div>
         </div>
+      </div>
+      <div class="col-md-12">
+        <ul class="list-unstyled mb-0 w-100">
+          {% for job in data.jobs %}
+          <li class="offer">
+            <div class="row">
+              <div class="col-lg-2 col-md-3">
+                <h5 class="time  mb-3 mb-sm-2 text-uppercase">
+                  <span class="city">{{ job.city }}</span>
+                  <br>
+                  <span class="country">{{ job.country }}</span>
+                </h5>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <header class="d-flex">
+                  <div class="header-content mr-3">
+                    <h5 class="title mt-0 mb-2 text-uppercase">
+                      <a href="{{ job.link }}">{{ job.title }}</a>
+                    </h5>
+                  </div>
+                  <div class="header-thumbnail ml-auto">
+                    <img src="{{ job.logo }}" alt="" class="img-fluid">
+                  </div>
+                </header>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
