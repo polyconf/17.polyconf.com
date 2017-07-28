@@ -45,37 +45,6 @@ function fixedNav() {
 
 baguetteBox.run('.gallery-row');
 
-Date.prototype.countdown = function (endTime) {
-  var target = this;
-  var today = endTime || new Date();
-
-  var milliseconds = target - today;
-  var seconds = Math.floor(milliseconds / 1000);
-  var minutes = Math.floor(seconds / 60);
-  var hours = Math.floor(minutes / 60);
-
-  return {
-    milliseconds: milliseconds % 1000,
-    seconds: seconds % 60,
-    minutes: minutes % 60,
-    hours: hours % 24,
-    days: Math.floor(hours / 24)
-  };
-};
-
-(function loop(){
-  var countdown = new Date(2017, 6, 7, 1).countdown();
-  var clock = document.getElementById('countdown');
-
-  clock.querySelector('.days').innerHTML = countdown.days;
-  clock.querySelector('.hours').innerHTML = countdown.hours;
-  clock.querySelector('.minutes').innerHTML = countdown.minutes;
-  clock.querySelector('.seconds').innerHTML = countdown.seconds;
-
-  setTimeout(loop, 1000);
-}());
-
-
 var alert = document.getElementById('alert');
 var closeAlert = document.getElementsByClassName('close')[0];
 
