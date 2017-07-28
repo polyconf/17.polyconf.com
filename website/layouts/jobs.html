@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<article>
+  <h1>{{ data.page.title }}</h1>
+  <small>{{ data.page.created_at | date }} ·</small>
+  <ul class="tags">
+    {% for tag in data.page.tags %}
+    <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {{ content | safe }}
+</article>
+{% endblock %}
