@@ -50,3 +50,18 @@
     }
   }
 }
+
+#job-offer {
+  position: relative;
+  padding: 100px 0 80px 0;
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+
+    &.lead {
+      font-size: 23px;
+      line-height: 36px;
+    }
+  }
+}

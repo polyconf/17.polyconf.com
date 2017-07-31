@@ -1,0 +1,76 @@
+{% extends "layouts/jobs.html" %}
+
+{% block content %}
+<main id="main" class="for-job">
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
+            <img src="images/menu.svg" alt="">
+            <img src="images/menu-fixed.svg" alt="" class="img-fluid menu-fixed">
+        </button>
+        <a class="navbar-brand" href="/">
+            <img src="/images/logo.svg" alt="" class="img-fluid">
+            <img src="/images/logo-fixed.svg" alt="" class="img-fluid logo-fixed">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#speakers">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#agenda">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#jobs">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#venue">Venue</a>
+                </li>
+            </ul>
+            <div class="cta ml-auto">
+                <ul>
+                    <li>
+                        <a href="https://eventil.com/events/polyconf-17/register" class="buy-ticket">Buy ticket</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+
+<section id="job-offer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 m-auto">
+                <div class="preamble mb-4">
+                    <h1 class="title mt-0 mb-0">{{data.jobs[5].title}}</h1>
+                </div>
+                <div>
+                    {% for lead in data.jobs[5].lead %}
+                    <p class="lead">{{lead}}</p>
+                    {% endfor %}
+
+                    {% for text in data.jobs[5].text %}
+                    <p>{{text}}</p>
+                    {% endfor %}
+
+                    {% for feature in data.jobs[5].features %}
+                    <p>{{feature.text}}</p>
+                    <ul>
+                        {% for list in feature.list %}
+                        <li>{{list}}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/job_offers.html" %}
+
+{% endblock %}
