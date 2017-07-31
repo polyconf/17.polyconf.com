@@ -1,15 +1,39 @@
-{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+  {% include "partials/meta.html" %}
+  <title>{% block title %}{{ data.title }}{% endblock %}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot" rel="font">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  {% for stylesheet in stylesheets %}
+  <link rel="stylesheet" href="{{ stylesheet }}"/>
+  {% endfor %}
+  <link href="/styles.css" rel="stylesheet">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.html" %}
 
-{% block content %}
-<article>
-  <h1>{{ data.page.title }}</h1>
-  <small>{{ data.page.created_at | date }} ·</small>
-  <ul class="tags">
-    {% for tag in data.page.tags %}
-    <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-  </ul>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-8394595-2']);
+    _gaq.push(['_setDomainName', 'polyconf.com']);
+    _gaq.push(['_trackPageview']);
 
-  {{ content | safe }}
-</article>
-{% endblock %}
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

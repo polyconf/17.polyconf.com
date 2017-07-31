@@ -9,6 +9,18 @@
     height: auto;
   }
 
+  &.for-job {
+    height: 90px;
+    min-height: auto;
+    background: $navyBlue;
+
+    .navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 90px;
+    }
+  }
+
   .navbar-toggler-right {
     right: 1em;
     top: 1.55em;

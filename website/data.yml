@@ -734,17 +734,141 @@ jobs:
     country: France
   - title: Ingénieur Sécurité Pentesteur H/F
     logo: images/sponsors/Vente_Privee_Logo.svg
+    link: /jobs/job-ingenieur
     city: Paris
     country: France
+    lead:
+      - En 2017, le Groupe vente-privee continue d’accélérer son développement en France et à l’international. Pionnier et leader mondial des ventes évènementielles avec une présence dans 14 pays et un chiffre d’affaires de 3 milliards d’euros en 2016, nous travaillons chaque jour à transformer le e-commerce en une expérience émotionnelle pour les 60 millions de membres qui nous font confiance.
+      - Animée par un esprit start-up, mêlant dynamisme et créativité, vente-privee ressemble à ceux qui la font vivre au quotidien. Afin d’accompagner notre forte croissance, nous poursuivons notre quête de nouveaux talents.  Si vous avez envie de vous engager au sein d’une entreprise résolument digitale, rejoignez-nous ! Nous sommes 3800 collaborateurs de 67 nationalités à être impatients de vous rencontrer.
+    text:
+      - Née d’une idée simple et néanmoins révolutionnaire, vente-privee.com c’est aujourd’hui 4,5 millions de visiteurs uniques par jour sur web et mobile. Nous traitons jusqu’à 250 transactions par minutes et 7 milliards de mails par an avec une délivrabilité avoisinant les 97%. Notre infra repose sur 1600 serveurs (dont 300 physiques) et représente 650 To de stockage !
+      - Afin d’accompagner Vente-Privée dans son évolution, vous serez acteur dans l’amélioration continue de la sécurité, afin d’apporter les indicateurs de risque et définir la gouvernance à suivre au niveau sécurité IT.
+    features:
+      - feature:
+        header: Vous serez amené à
+        list:
+          - Effectuer et piloter les tests d’intrusion sur les applications et les réseaux. Piloter les remédiations en proposant des solutions pérennes.
+          - Participer à la mise en place des mécanismes de sécurisation dans le but d’augmenter le niveau de sécurité continuellement.
+          - Réfèrent technique pour valider le bon niveau de sécurité SI dans les différents projets métiers et SI
+          - Assurer la veille sécurité.
+          - Contribuer à la sensibilisation et à l'animation Sécurité.
+      - feature:
+        header: Compétences techniques exigées
+        list:
+          - Vous avez de bonnes connaissances des systèmes Linux, Windows, réseau et Scripting PowerShell.
+          - Vous avez de bonnes connaissances en développement sécurisé web/mobiles.
+          - Vous maitrisez des techniques d’intrusion réseau et applicative.
+          - Vous possédez une bonne culture SSI, notamment des référentiels sécurités de type 27000, PCIDSS.
+      - feature:
+        header: Qualifications principales
+        list:
+          - De formation supérieure en informatique, vous justifiez d’une expérience de 5 ans minimum dans le monde de la sécurité informatique et votre niveau d’anglais est courant à l’écrit comme à l’oral. L’espagnol serait un plus
+          - Votre caractère curieux vous pousse à participer à des conférences sécurité/CTF et travaux de recherches en sécurité.
+          - Doté d'un esprit d'analyse pointu, vous devez être capable de restituer les informations de façon synthétique et être force de propositions. Votre ténacité fait que vous allez jusqu’au bout de tous les projets qui vous sont confiés.
   - title: Lead Developer H/F
     logo: images/sponsors/Vente_Privee_Logo.svg
+    link: /jobs/job-lead-dev
     city: Paris
     country: France
+    lead:
+      - En 2017, le Groupe vente-privee continue d’accélérer son développement en France et à l’international. Pionnier et leader mondial des ventes évènementielles avec une présence dans 14 pays et un chiffre d’affaires de 3 milliards d’euros en 2016, nous travaillons chaque jour à transformer le e-commerce en une expérience émotionnelle pour les 60 millions de membres qui nous font confiance.
+      - Animée par un esprit start-up, mêlant dynamisme et créativité, vente-privee ressemble à ceux qui la font vivre au quotidien. Afin d’accompagner notre forte croissance, nous poursuivons notre quête de nouveaux talents.  Si vous avez envie de vous engager au sein d’une entreprise résolument digitale, rejoignez-nous ! Nous sommes 3800 collaborateurs de 67 nationalités à être impatients de vous rencontrer.
+    text:
+      - Née d’une idée simple et néanmoins révolutionnaire, vente-privee.com c’est aujourd’hui 4,5 millions de visiteurs uniques par jour sur web et mobile. Nous traitons jusqu’à 250 transactions par minutes et 7 milliards de mails par an avec une délivrabilité avoisinant les 97%. Notre infra repose sur 1600 serveurs (dont 300 physiques) et représente 650 To de stockage !
+      - Elu site mode préféré des internautes pour la 5ème année consécutive, nos apps iOS et Android sont classées dans le TOP5 des meilleures applications de shopping.
+      - Nos 240 collaborateurs IT fourmillent de projets plus captivants les uns que les autres. Les projets en cours représentent déjà 14000 jours homme ! Passionnés par l’innovation qu’offre la technologie, nous développons nos solutions sur des outils web robustes et innovantes React, .Net, CouchBase, Node JS, MongoDB, Cassandra, Android, iOS (Swift), ElasticSearch, etc.
+    features:
+      - feature:
+        header: Votre défi sur ce poste de Lead Developer
+        text:
+          - L’objectif est de mener les équipes de développeurs dans nos chantiers stratégiques intégration de nouvelles solutions, projets métiers. Cela implique d’accompagner le Métier dans l’étude et la mise en place des nouveaux processus, de réaliser les évolutions des outils existants et d’apporter des solutions techniques novatrices.
+        list:
+          - Architecturer, concevoir et modéliser les solutions informatiques
+          - Développer des applications
+          - Piloter l’activité de l’équipe de DEV (découpage, distribution et planification des tâches)
+          - Analyser les besoins Métiers et participer à l’alimentation du Backlog Produit
+          - Réfléchir sur l’amélioration des process existants et sur les nouveaux process à mettre en place
+          - Réflexion autour de l’amélioration des process
+          - Rédiger des documentations techniques
+      - feature:
+        header: Notre stack
+        text:
+          - C#, Asp.net, Go, MVC, WebAPI, Visual Studio 2013, Javascript, NodeJS, ReactJS, Java, API REST, application N-Tiers, T-SQL, MySQL, MongoDB, Couchbase, RabbitMQ, Kafka, ElasticSearch, Docker,…
+      - feature:
+        header: Qualifications principales
+        text:
+          - De formation supérieure en sciences/ingénierie informatique nous êtes professionnellement immergé des nouvelles technologies en tant que développeur/Lead Dev depuis plusieurs années.
+          - Doté d’un esprit start-up vos réalisations antérieures sont votre meilleur faire-valoir. Enfin, pour vous, il n’y a pas de bon développeur sans veille technologique permanente !
   - title: Développeur iOS H/F
     logo: images/sponsors/Vente_Privee_Logo.svg
+    link: /jobs/job-developpeur-ios
     city: Paris
     country: France
+    lead:
+      - En 2017, le Groupe vente-privee continue d’accélérer son développement en France et à l’international. Pionnier et leader mondial des ventes évènementielles avec une présence dans 14 pays et un chiffre d’affaires de 3 milliards d’euros en 2016, nous travaillons chaque jour à transformer le e-commerce en une expérience émotionnelle pour les 60 millions de membres qui nous font confiance.
+      - Animée par un esprit start-up, mêlant dynamisme et créativité, vente-privee ressemble à ceux qui la font vivre au quotidien. Afin d’accompagner notre forte croissance, nous poursuivons notre quête de nouveaux talents.  Si vous avez envie de vous engager au sein d’une entreprise résolument digitale, rejoignez-nous ! Nous sommes 3800 collaborateurs de 67 nationalités à être impatients de vous rencontrer.*
+    text:
+      - Née d’une idée simple et néanmoins révolutionnaire, vente-privee.com c’est aujourd’hui 4,5 millions de visiteurs uniques par jour sur web et mobile. Nous traitons jusqu’à 250 transactions par minutes et 7 milliards de mails par an avec une délivrabilité avoisinant les 97%. Notre infra repose sur 1600 serveurs (dont 300 physiques) et représente 650 To de stockage !
+      - Elu site mode préféré des internautes pour la 5ème année consécutive, nos apps iOS et Android sont classées dans le TOP5 des meilleures applications de shopping.
+      - Nos 240 collaborateurs IT fourmillent de projets plus captivants les uns que les autres. Les projets en cours représentent déjà 14000 jours homme ! Passionnés par l’innovation qu’offre la technologie, nous développons nos solutions sur des outils web robustes et innovantes React, .Net, CouchBase, Node JS, MongoDB, Cassandra, Android, iOS (Swift), ElasticSearch, etc.
+    features:
+      - feature:
+        header: Rôle et Responsabilités
+        list:
+          - Concevoir et proposer les solutions de développement logiciel répondant aux besoins fonctionnels et techniques du projet.
+          - Réaliser ces solutions par l’écriture de code, en respectant les méthodes et procédures qualité définies au sein de la DSI.
+          - S’assurer de la conformité fonctionnelle et technique de ces réalisations en effectuant les tests unitaires et les tests d’intégration.
+          - Assurer la maintenance des applications et garantir au quotidien, leur bon fonctionnement et leurs performances.
+          - Participer à la création de prototypes et contribuer à enrichir le Framework vente-privee.
+          - Réaliser des estimations de charges.
+      - feature:
+          header: Compétences techniques
+          list:
+            - Maitrise du SDK Apple (iOS8, iOS9) et Interfaçage avec des web services (REST/JSON)
+            - Swift
+            - Maitrise des applications mobiles et de leurs usages
+            - Architecture technique
+            - Storyboard, Contraintes, CoreData, AFNetworking
+      - feature:
+          header: Qualités requises
+          list:
+            - Passionné
+            - Autonome, capacité à travailler seul et en équipe
+            - Sens du contact pour interagir avec les différentes équipes
+            - Esprit d’initiative, rigoureux et responsable
+            - Curieux des technologies mobiles et connectées
+      - feature:
+          header: Formation et expériences professionnelles
+          list:
+            - Bac+5 - Ingénieur informatique
+            - Au moins 2 ans d’expérience dans le développement iOS
+            - Au moins 2 applications disponibles sur le store
   - title: Lead DevOps H/F
     logo: images/sponsors/Vente_Privee_Logo.svg
+    link: /jobs/job-lead-devops
     city: Paris
     country: France
+    lead:
+      - En 2017, le Groupe vente-privee continue d’accélérer son développement en France et à l’international. Pionnier et leader mondial des ventes évènementielles avec une présence dans 14 pays et un chiffre d’affaires de 3 milliards d’euros en 2016, nous travaillons chaque jour à transformer le e-commerce en une expérience émotionnelle pour les 60 millions de membres qui nous font confiance.
+      - Animée par un esprit start-up, mêlant dynamisme et créativité, vente-privee ressemble à ceux qui la font vivre au quotidien. Afin d’accompagner notre forte croissance, nous poursuivons notre quête de nouveaux talents.  Si vous avez envie de vous engager au sein d’une entreprise résolument digitale, rejoignez-nous ! Nous sommes 3800 collaborateurs de 67 nationalités à être impatients de vous rencontrer.
+    text:
+      - Née d’une idée simple et néanmoins révolutionnaire, vente-privee.com c’est aujourd’hui 4,5 millions de visiteurs uniques par jour sur web et mobile. Nous traitons jusqu’à 250 transactions par minutes et 7 milliards de mails par an avec une délivrabilité avoisinant les 97%. Notre infra repose sur 1600 serveurs (dont 300 physiques) et représente 650 To de stockage !
+      - Elu site mode préféré des internautes pour la 5ème année consécutive, nos apps iOS et Android sont classées dans le TOP5 des meilleures applications de shopping.
+      - Nos 240 collaborateurs IT fourmillent de projets plus captivants les uns que les autres. Les projets en cours représentent déjà 14000 jours homme ! Passionnés par l’innovation qu’offre la technologie, nous développons nos solutions sur des outils web robustes et innovantes React, .Net, CouchBase, Node JS, MongoDB, Cassandra, Android, iOS (Swift), ElasticSearch, etc.
+      - Afin d'aider les équipes de développement à mettre en production et maintenir en conditions opérationnelles les projets nous recherchons un Lead DevOps.
+      - Les enjeux principaux sont le maintien en condition opérationnel des applications Web et métiers dont certaines critique (enjeux business) et sous astreinte sur le périmètre du back office & front office.
+    features:
+      - feature:
+        header: Responsabilités
+        list:
+          - Arbitre les choix techniques.
+          - Définit les SLA avec les clients internes et en assure le respect.
+          - Participe au recrutement de son équipe.
+          - Manage l’équipe
+          - Distribue les tâches des devops et prioritise les astreintes
+          - Suit l’activité.
+          - Apporte son soutien à l’équipe.
+          - En tant que lead technique, participe activement à l’activité opérationnelle en sus du pilotage de son équipe
+          - Définit des processus pour garantir le bon fonctionnement et la disponibilité des applications dans l’infrastructure informatique en relation avec les équipes de développement et les équipes Devops.
+          - Met en place un éco-système d’exploitation des logiciels écrits par les développeurs (enjeux de volumétrie et de haute criticité).
+          - Facilite le travail des développeurs release ingeniering (automatisation d’une plate-forme de tests)
