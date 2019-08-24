@@ -9,10 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot" rel="font">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-  {% for stylesheet in stylesheets %}
-  <link rel="stylesheet" href="{{ stylesheet }}" />
-  {% endfor %}
-  <link href="/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-alpha.6/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="{{ bundles.css }}" />
   {% block head %}{% endblock %}
 </head>
 
@@ -37,13 +35,13 @@
       s.parentNode.insertBefore(ga, s);
     })();
   </script>
-  {% for javascript in javascripts %}
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  {% for javascript in javascripts %}
   <script type="text/javascript" src="{{ javascript }}"></script>
   {% endfor %}
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  <script type="text/javascript" src="/bundle.js"></script>
+  <script type="text/javascript" src="/{{ bundles.js }}"></script>
 </body>
 
 </html>
