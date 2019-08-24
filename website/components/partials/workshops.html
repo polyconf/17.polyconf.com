@@ -9,11 +9,13 @@
         </div>
       </div>
       <ul class="col-md-12 workshops-list list-unstyled mb-0">
-        {% for workshop in data.workshops %}
+        {% for workshop in website.workshops %}
         <li class="row mb-5">
           <div class="author col-lg-3 text-center">
-            <img src="images/speakers/{{ workshop.name | lower | replace(' ', '_')}}.jpg" alt="" class="img-fluid m-auto avatar">
-            <a href="https://eventil.com/events/polyconf-17/register" class="btn-cta d-block w-100 text-center mt-2 mb-4">Register</a>
+            <img src="images/speakers/{{ workshop.name | lower | replace(' ', '_')}}.jpg" alt=""
+              class="img-fluid m-auto avatar">
+            <a href="https://eventil.com/events/polyconf-17/register"
+              class="btn-cta d-block w-100 text-center mt-2 mb-4">Register</a>
           </div>
           <div class="content col-lg-6">
             <header>
@@ -44,7 +46,7 @@
                   {% markdown %}
                   {{ requirement }}
                   {% endmarkdown %}
-                  </p>
+                </p>
               </li>
               {% endfor %}
             </ul>

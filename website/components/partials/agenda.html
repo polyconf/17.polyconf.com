@@ -3,11 +3,13 @@
     <div class="row">
       <div class="col-md-10 preamble dark">
         <div class="row">
-          <div class="col-md-12"><h1 class="mt-0 mb-0 title">Agenda</h1></div>
+          <div class="col-md-12">
+            <h1 class="mt-0 mb-0 title">Agenda</h1>
+          </div>
         </div>
       </div>
       <div class="col-md-12">
-        {% for day in data.agenda %}
+        {% for day in website.agenda %}
         <div class="row">
           <div class="schedule col-md-12">
             <div class="schedule-inner">
@@ -20,8 +22,8 @@
                   <div class="row">
                     <div class="col-lg-2 col-md-3">
                       <h5 class="time  mb-3 mb-sm-2 text-uppercase">
-                        <span class="start">{{ slot.start }}</span> - 
-                        <span class="end">{{ slot.end }}</span> 
+                        <span class="start">{{ slot.start }}</span> -
+                        <span class="end">{{ slot.end }}</span>
                         <br>
                         <span class="minutes">{{ slot.length }}</span>
                       </h5>
@@ -31,11 +33,13 @@
                         <div class="header-content mr-3">
                           <h5 class="title mt-0 mb-2 text-uppercase">{{ slot.title }}</h5>
                           {% if slot.name %}
-                            <p class="name lead mt-0 mb-0 d-block">with <strong>{{ slot.name }}</strong></p>
+                          <p class="name lead mt-0 mb-0 d-block">with <strong>{{ slot.name }}</strong></p>
                           {% endif %}
                         </div>
                         <div class="header-thumbnail ml-auto">
-                          <img src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') | replace('\'', '')}}.jpg" alt="">
+                          <img
+                            src="images/speakers/{{ (slot.name or 'placeholder') | lower | replace(' ', '_') | replace('\'', '')}}.jpg"
+                            alt="">
                         </div>
                       </header>
                       <div class="collapse-content w-100 d-block mt-3 hidden">

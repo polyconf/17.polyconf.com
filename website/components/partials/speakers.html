@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      {% for speaker in data.speakers %}
+      {% for speaker in website.speakers %}
       <div class="col-md-3 speaker">
         <div class="speaker-inner">
           <div class="thumbnail">
@@ -29,9 +29,12 @@
               <div class="overlay-shadow">
                 <div class="overlay-content">
                   <ul class="overlay-social">
-                    <li><a href="https://github.com/{{ speaker.github }}" target="_blank"><i class="ion-social-github"></i></a></li>
-                    <li><a href="https://twitter.com/{{ speaker.twitter }}" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="https://eventil.com/users/{{ speaker.eventil }}"><img src="/images/logo-eventil.svg" alt="" class="img-fluid eventil"></a></li>
+                    <li><a href="https://github.com/{{ speaker.github }}" target="_blank"><i
+                          class="ion-social-github"></i></a></li>
+                    <li><a href="https://twitter.com/{{ speaker.twitter }}" target="_blank"><i
+                          class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://eventil.com/users/{{ speaker.eventil }}"><img src="/images/logo-eventil.svg"
+                          alt="" class="img-fluid eventil"></a></li>
                   </ul>
                 </div>
               </div>

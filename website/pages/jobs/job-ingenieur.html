@@ -46,22 +46,22 @@
         <div class="row">
             <div class="col-md-7 m-auto">
                 <div class="preamble mb-4">
-                    <h1 class="title mt-0 mb-0">{{data.jobs[2].title}}</h1>
+                    <h1 class="title mt-0 mb-0">{{website.jobs[2].title}}</h1>
                 </div>
                 <div>
-                    {% for lead in data.jobs[2].lead %}
-                        <p class="lead">{{lead}}</p>
+                    {% for lead in website.jobs[2].lead %}
+                    <p class="lead">{{lead}}</p>
                     {% endfor %}
 
-                    {% for text in data.jobs[2].text %}
+                    {% for text in website.jobs[2].text %}
                     <p>{{text}}</p>
                     {% endfor %}
 
-                    {% for feature in data.jobs[2].features %}
+                    {% for feature in website.jobs[2].features %}
                     <p class="font-weight-bold">{{feature.header}}</p>
                     <ul>
                         {% for list in feature.list %}
-                            <li>{{list}}</li>
+                        <li>{{list}}</li>
                         {% endfor %}
                     </ul>
                     {% endfor %}
